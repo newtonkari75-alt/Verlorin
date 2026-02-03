@@ -31,6 +31,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="dns-prefetch" href="https://unpkg.com">
     <link rel="preload" as="image" href="images/verlorin3.png">
+    <link rel="preload" as="image" href="images/verlorin1.png">
 
     <!-- Structured Data (JSON-LD) -->
     <script type="application/ld+json">
@@ -67,34 +68,141 @@
             --crimson: #8B0000;
             --crimson-dark: #5C0000;
             --gold: #D4AF37;
+            --gold-light: #F5E6A3;
             --charcoal: #111111;
+            --slate: #2D2D2D;
             --white: #FFFFFF;
         }
-        body { font-family: 'Inter', sans-serif; color: var(--charcoal); background: var(--white); overflow-x: hidden; }
-        h1, h2, h3 { font-family: 'Oswald', sans-serif; text-transform: uppercase; letter-spacing: 0.5px; }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--charcoal);
+            background: var(--white);
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Oswald', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
         .btn-primary {
             background: linear-gradient(135deg, var(--crimson) 0%, var(--crimson-dark) 100%);
-            color: var(--white); padding: 12px 24px; border-radius: 8px; font-weight: 700;
-            text-transform: uppercase; letter-spacing: 1px; transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(139, 0, 0, 0.3); display: inline-flex; align-items: center; justify-content: center;
+            color: var(--white);
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(139, 0, 0, 0.3);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
         }
+
         .btn-gold {
             background: linear-gradient(135deg, var(--gold) 0%, #B8962F 100%);
-            color: var(--charcoal); padding: 16px 40px; border-radius: 8px; font-weight: 800;
-            font-size: 18px; text-transform: uppercase; letter-spacing: 1px; transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4); display: inline-flex; align-items: center; justify-content: center;
+            color: var(--charcoal);
+            padding: 16px 40px;
+            border-radius: 8px;
+            font-weight: 800;
+            font-size: 18px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
         }
-        .hero-gradient { background: radial-gradient(circle at top right, #2D1A1A, #111111); }
-        .badge-urgent { background: var(--crimson); color: var(--white); padding: 6px 16px; border-radius: 9999px; font-size: 12px; font-weight: 700; text-transform: uppercase; animation: pulse 2s infinite; }
-        @keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.05); } 100% { transform: scale(1); } }
-        .modal-overlay { position: fixed; inset: 0; background: rgba(0, 0, 0, 0.9); z-index: 1000; display: none; align-items: center; justify-content: center; padding: 20px; backdrop-filter: blur(5px); }
-        .modal-overlay.active { display: flex; }
-        .modal-content { background: white; border-radius: 16px; max-width: 850px; width: 100%; max-height: 85vh; overflow-y: auto; padding: 40px; position: relative; }
-        .country-btn { background: white; border: 2px solid #f3f4f6; border-radius: 20px; padding: 30px 16px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 15px; transition: all 0.3s ease; text-decoration: none; }
-        .country-btn:hover { border-color: var(--crimson); transform: translateY(-8px); box-shadow: 0 15px 30px rgba(139, 0, 0, 0.12); }
-        .flag-img { width: 60px; height: auto; border-radius: 4px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); }
-        .product-shadow { filter: drop-shadow(0 20px 30px rgba(0,0,0,0.5)); }
-        @keyframes float { 0% { transform: translateY(0px); } 50% { transform: translateY(-20px); } 100% { transform: translateY(0px); } }
+
+        .hero-gradient {
+            background: radial-gradient(circle at top right, #2D1A1A, #111111);
+        }
+
+        .badge-urgent {
+            background: var(--crimson);
+            color: var(--white);
+            padding: 6px 16px;
+            border-radius: 9999px;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        .modal-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.9);
+            z-index: 1000;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            backdrop-filter: blur(5px);
+        }
+
+        .modal-overlay.active {
+            display: flex;
+        }
+
+        .modal-content {
+            background: white;
+            border-radius: 16px;
+            max-width: 850px;
+            width: 100%;
+            max-height: 85vh;
+            overflow-y: auto;
+            padding: 40px;
+            position: relative;
+        }
+
+        .country-btn {
+            background: white;
+            border: 2px solid #f3f4f6;
+            border-radius: 20px;
+            padding: 30px 16px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            text-decoration: none;
+        }
+
+        .country-btn:hover {
+            border-color: var(--crimson);
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(139, 0, 0, 0.12);
+        }
+
+        .flag-img {
+            width: 60px;
+            height: auto;
+            border-radius: 4px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+        }
+
+        .product-shadow {
+            filter: drop-shadow(0 20px 30px rgba(0,0,0,0.5));
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
     </style>
 </head>
 
@@ -103,7 +211,7 @@
     <!-- Barra de Urgência -->
     <div class="bg-[#8B0000] text-white py-2 text-center text-xs sm:text-sm font-bold z-[60] relative">
         <div class="container mx-auto px-4 flex items-center justify-center gap-2">
-            <span>🔥 ATUALIZAÇÃO: Ofertas de 72% OFF expiram em <span id="timer">14:59</span> — ESTOQUE LIMITADO</span>
+            <span>🔥 ATUALIZAÇÃO: Ofertas de 72% OFF encerra em <span id="timer">14:59</span> — ESTOQUE LIMITADO</span>
         </div>
     </div>
 
@@ -195,7 +303,8 @@
                 <div class="max-w-4xl mx-auto flex flex-col lg:flex-row items-center gap-16">
                     <div class="w-full lg:w-1/2" data-aos="fade-right">
                         <div class="relative">
-                            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=800" alt="Homem Saudável" class="rounded-3xl shadow-2xl">
+                            <!-- Imagem substituída conforme solicitado -->
+                            <img src="images/verlorin1.png" alt="Verlorin" class="rounded-3xl shadow-2xl w-full h-auto">
                             <div class="absolute -bottom-6 -right-6 bg-red-700 text-white p-6 rounded-2xl shadow-xl">
                                 <div class="text-3xl font-bold uppercase">POLÍTICA</div>
                                 <div class="text-xs font-medium uppercase tracking-wider">DE SATISFAÇÃO</div>
@@ -203,21 +312,29 @@
                         </div>
                     </div>
                     <div class="w-full lg:w-1/2" data-aos="fade-left">
-                        <img src="images/verlorin1.png" alt="Verlorin Fórmulas" class="w-48 h-auto mb-6 mx-auto lg:mx-0 drop-shadow-lg">
+                        <!-- Imagem secundária opcional antes do título -->
+                        <img src="images/verlorin1.png" alt="Verlorin Fórmulas" class="w-48 h-auto mb-6 mx-auto lg:mx-0 drop-shadow-lg opacity-80">
                         <h2 class="text-3xl md:text-4xl font-black mb-8 leading-tight uppercase">CIÊNCIA ALIADA AO <span class="text-red-700 italic">BEM-ESTAR MASCULINO</span></h2>
                         <div class="space-y-8">
                             <div class="flex gap-5">
                                 <div class="shrink-0 w-12 h-12 rounded-lg bg-red-700 flex items-center justify-center text-white shadow-lg"><i data-lucide="activity"></i></div>
                                 <div>
-                                    <h3 class="text-xl font-bold mb-2 uppercase">Apoio Energético</h3>
-                                    <p class="text-gray-600">Contribui para a renovação da disposição através de micronutrientes essenciais.</p>
+                                    <h3 class="text-xl font-bold mb-2 uppercase text-red-700">Apoio Energético</h3>
+                                    <p class="text-gray-600">Contribui para a renovação da disposição através de micronutrientes essenciais que atuam no metabolismo celular.</p>
                                 </div>
                             </div>
                             <div class="flex gap-5">
                                 <div class="shrink-0 w-12 h-12 rounded-lg bg-red-700 flex items-center justify-center text-white shadow-lg"><i data-lucide="battery-charging"></i></div>
                                 <div>
-                                    <h3 class="text-xl font-bold mb-2 uppercase">Suporte ao Vigor</h3>
-                                    <p class="text-gray-600">Fórmula que auxilia na manutenção dos níveis de estamina natural.</p>
+                                    <h3 class="text-xl font-bold mb-2 uppercase text-red-700">Suporte ao Vigor</h3>
+                                    <p class="text-gray-600">Fórmula premium projetada para auxiliar na manutenção dos níveis de estamina e performance natural.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-5">
+                                <div class="shrink-0 w-12 h-12 rounded-lg bg-red-700 flex items-center justify-center text-white shadow-lg"><i data-lucide="shield-check"></i></div>
+                                <div>
+                                    <h3 class="text-xl font-bold mb-2 uppercase text-red-700">Confiança Recuperada</h3>
+                                    <p class="text-gray-600">Sinta-se no seu auge. Quando o corpo está em equilíbrio, a confiança transparece em todos os momentos.</p>
                                 </div>
                             </div>
                         </div>
@@ -226,12 +343,35 @@
             </div>
         </section>
 
-        <!-- Seção de Países -->
+        <!-- Garantia Risco Zero -->
+        <section class="py-20 bg-zinc-950 text-white border-t border-white/5">
+            <div class="container mx-auto px-4">
+                <div class="max-w-5xl mx-auto border-4 border-dashed border-zinc-800 p-8 md:p-16 rounded-[40px] flex flex-col md:flex-row items-center gap-12" data-aos="fade-up">
+                    <div class="shrink-0 flex items-center justify-center">
+                        <div class="relative flex flex-col items-center">
+                            <i data-lucide="shield-check" class="w-40 h-40 text-red-700 drop-shadow-[0_0_20px_rgba(185,28,28,0.5)]"></i>
+                            <div class="text-center mt-[-45px] z-10">
+                                <span class="block text-4xl font-black text-white">60</span>
+                                <span class="block text-xs font-bold text-red-700 uppercase tracking-widest">DIAS</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 class="text-3xl md:text-4xl font-black mb-4 uppercase leading-tight italic">GARANTIA DE RISCO ZERO</h2>
+                        <p class="text-gray-400 leading-relaxed text-lg">
+                            Teste Verlorin por 60 dias completos. Se não estiver satisfeito, <strong>não importa em qual país você esteja</strong>, oferecemos reembolso total. A sua satisfação é a nossa prioridade internacional absoluta e protegida por nossa política de devolução sem perguntas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seleção de Países -->
         <section id="countries" class="py-20 bg-gray-50 border-t border-gray-100">
             <div class="container mx-auto px-4">
                 <div class="text-center max-w-3xl mx-auto mb-16">
                     <h2 class="text-3xl md:text-4xl font-black mb-4 uppercase italic">VERIFICAR DISPONIBILIDADE NO SITE OFICIAL</h2>
-                    <p class="text-gray-600">Selecione seu país para ser redirecionado ao estoque oficial do fabricante com as taxas de envio regionais.</p>
+                    <p class="text-gray-600">Selecione seu país para garantir o envio direto com as melhores taxas regionais e ofertas locais.</p>
                 </div>
                 
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 max-w-6xl mx-auto" data-aos="fade-up">
@@ -274,18 +414,36 @@
             </div>
         </section>
 
-        <!-- FAQ -->
+        <!-- Perguntas Frequentes -->
         <section id="faq" class="py-20 bg-white">
             <div class="container mx-auto px-4 max-w-3xl">
-                <h2 class="text-3xl md:text-4xl font-black text-center mb-12 uppercase italic">PERGUNTAS FREQUENTES</h2>
+                <h2 class="text-3xl md:text-4xl font-black text-center mb-12 uppercase italic">Perguntas Frequentes</h2>
                 <div class="space-y-4">
                     <div class="bg-gray-50 rounded-2xl shadow-sm overflow-hidden border border-gray-100">
                         <button class="w-full px-6 py-5 text-left flex justify-between items-center group" onclick="toggleFaq(this)">
-                            <span class="font-bold text-lg">Em quanto tempo verei resultados?</span>
+                            <span class="font-bold text-lg text-zinc-800">Em quanto tempo verei resultados?</span>
                             <i data-lucide="plus" class="w-5 h-5 text-zinc-400 group-hover:text-red-700 transition"></i>
                         </button>
                         <div class="px-6 py-0 max-h-0 overflow-hidden transition-all duration-300">
-                            <p class="py-5 text-zinc-600 text-sm">Os resultados variam conforme o metabolismo individual. Recomenda-se o uso regular aliado a uma alimentação equilibrada por 30 a 60 dias para melhor percepção dos benefícios.</p>
+                            <p class="py-5 text-zinc-600 text-sm">A maioria dos usuários sente um aumento significativo de energia na primeira semana. Para resultados máximos e permanentes, recomendamos o uso consistente de Verlorin por 30 a 60 dias.</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 rounded-2xl shadow-sm overflow-hidden border border-gray-100">
+                        <button class="w-full px-6 py-5 text-left flex justify-between items-center group" onclick="toggleFaq(this)">
+                            <span class="font-bold text-lg text-zinc-800">O Verlorin é seguro?</span>
+                            <i data-lucide="plus" class="w-5 h-5 text-zinc-400 group-hover:text-red-700 transition"></i>
+                        </button>
+                        <div class="px-6 py-0 max-h-0 overflow-hidden transition-all duration-300">
+                            <p class="py-5 text-zinc-600 text-sm">Sim. Nossa fórmula é 100% natural, sem substâncias sintéticas. O produto é fabricado em instalações registradas pela FDA seguindo os rigorosos padrões GMP para garantir pureza total.</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 rounded-2xl shadow-sm overflow-hidden border border-gray-100">
+                        <button class="w-full px-6 py-5 text-left flex justify-between items-center group" onclick="toggleFaq(this)">
+                            <span class="font-bold text-lg text-zinc-800">Como devo tomar?</span>
+                            <i data-lucide="plus" class="w-5 h-5 text-zinc-400 group-hover:text-red-700 transition"></i>
+                        </button>
+                        <div class="px-6 py-0 max-h-0 overflow-hidden transition-all duration-300">
+                            <p class="py-5 text-zinc-600 text-sm">Para melhores resultados, tome duas (2) gomas diariamente, preferencialmente junto com uma refeição para maximizar a absorção dos nutrientes vitais.</p>
                         </div>
                     </div>
                 </div>
@@ -293,10 +451,10 @@
         </section>
     </main>
 
-    <!-- Footer Blindado (Compliance Total) -->
+    <!-- Footer -->
     <footer class="bg-black py-20 text-gray-500 border-t border-white/5">
-        <div class="container mx-auto px-4">
-            <!-- Bio do Autor / EEAT Section -->
+        <div class="container mx-auto px-4 text-center md:text-left">
+            <!-- EEAT Section -->
             <div class="mb-12 border-b border-white/10 pb-12 flex flex-col md:flex-row gap-8 items-center md:items-start text-center md:text-left">
                 <div class="w-20 h-20 rounded-full bg-zinc-800 flex items-center justify-center shrink-0"><i data-lucide="user" class="text-zinc-600 w-10 h-10"></i></div>
                 <div>
@@ -315,16 +473,15 @@
                     <ul class="text-sm space-y-2">
                         <li><button onclick="openModal('privacy-modal')" class="hover:text-white transition text-left">Privacidade</button></li>
                         <li><button onclick="openModal('terms-modal')" class="hover:text-white transition text-left">Termos Gerais</button></li>
-                        <li><button onclick="openModal('refund-modal')" class="hover:text-white transition text-left">Entrega e Devoluções</button></li>
-                        <li><button onclick="openModal('contact-modal')" class="text-red-700 font-bold uppercase text-left">Suporte</button></li>
+                        <li><button onclick="openModal('refund-modal')" class="hover:text-white transition text-left text-red-700 font-bold uppercase">Entregas e Garantia</button></li>
+                        <li><button onclick="openModal('contact-modal')" class="text-white/50 hover:text-white transition uppercase text-left">Contate-nos</button></li>
                     </ul>
                 </div>
                 <div>
                     <h5 class="text-white font-bold mb-4 uppercase text-xs">Identidade Fiscal</h5>
                     <p class="text-[10px] leading-relaxed uppercase tracking-tighter">
                         VIVELLO SOLUTIONS LTD<br>
-                        Reg ID: GB-DE61BX<br>
-                        Ashbourne, Derbyshire, Reino Unido<br>
+                        Ashbourne, Derbyshire, Reino Unido, GB-DE61BX<br>
                         support@vivellify-support.com
                     </p>
                 </div>
@@ -342,10 +499,15 @@
     <div id="refund-modal" class="modal-overlay" onclick="if(event.target===this)closeModal('refund-modal')">
         <div class="modal-content text-left">
             <button class="absolute top-4 right-4 p-2" onclick="closeModal('refund-modal')"><i data-lucide="x"></i></button>
-            <h2 class="text-2xl font-black mb-6 uppercase">Entrega e Reembolso</h2>
+            <h2 class="text-2xl font-black mb-6 uppercase text-zinc-900">Política de Entrega e Reembolsos</h2>
             <div class="text-gray-600 space-y-4 text-sm leading-relaxed">
-                <p>O prazo de entrega global varia de 2 a 14 dias úteis após o processamento (1-3 dias). Taxas alfandegárias locais são de responsabilidade do destinatário.</p>
-                <p>O fabricante oferece garantia de devolução de 60 dias. Para acionar, entre em contato via e-mail oficial de suporte.</p>
+                <h3 class="font-bold text-zinc-900 border-b pb-1">1. Entrega</h3>
+                <p><strong>1.1 Processamento:</strong> Pedidos processados em 1-3 dias úteis. Entrega global entre 2 a 14 dias úteis.</p>
+                <p><strong>1.2 Custos:</strong> Calculados no checkout. Taxas alfandegárias são de total responsabilidade do cliente.</p>
+                <h3 class="font-bold text-zinc-900 border-b pb-1">3.3 Devoluções</h3>
+                <p>Direito de desistência de 14 dias (Diretiva 2011/83/UE). Custos de devolução são responsabilidade do cliente. Garantia de satisfação estendida pelo fabricante de 60 dias.</p>
+                <h3 class="font-bold text-zinc-900 border-b pb-1">4. Suporte</h3>
+                <p>E-mail: support@vivellify-support.com (Resposta em até 24h).</p>
             </div>
         </div>
     </div>
@@ -353,9 +515,10 @@
     <div id="terms-modal" class="modal-overlay" onclick="if(event.target===this)closeModal('terms-modal')">
         <div class="modal-content text-left">
             <button class="absolute top-4 right-4 p-2" onclick="closeModal('terms-modal')"><i data-lucide="x"></i></button>
-            <h2 class="text-2xl font-black mb-6 uppercase">Termos e Condições Gerais</h2>
+            <h2 class="text-2xl font-black mb-6 uppercase text-zinc-900">Termos e Condições Gerais</h2>
             <div class="text-gray-600 space-y-4 text-sm leading-relaxed">
-                <p>Estes termos aplicam-se à Vivello Solutions Ltd. (UK) como distribuidora. A relação comercial é regida pelas leis aplicáveis. O contrato é concluído no momento da aceitação do pedido na loja oficial do fabricante.</p>
+                <p>Estes termos aplicam-se à Vivello Solutions Ltd. (UK) como distribuidora autorizada. A relação comercial é regida pelas leis da República Federal da Alemanha e diretrizes da UE.</p>
+                <p>O contrato é concluído no momento da aceitação do pedido na loja oficial do fabricante.</p>
             </div>
         </div>
     </div>
@@ -363,9 +526,9 @@
     <div id="privacy-modal" class="modal-overlay" onclick="if(event.target===this)closeModal('privacy-modal')">
         <div class="modal-content text-left">
             <button class="absolute top-4 right-4 p-2" onclick="closeModal('privacy-modal')"><i data-lucide="x"></i></button>
-            <h2 class="text-2xl font-black mb-6 uppercase">Proteção de Dados Pessoais</h2>
+            <h2 class="text-2xl font-black mb-6 uppercase text-zinc-900">Proteção de Dados Pessoais</h2>
             <div class="text-gray-600 space-y-4 text-sm leading-relaxed">
-                <p>O processamento de dados ocorre em conformidade com o RGPD. Coletamos IP e dados de dispositivo para garantir a segurança da plataforma e estabilidade do sistema.</p>
+                <p>O processamento de dados ocorre em conformidade com o RGPD. Coletamos IP e dados de dispositivo exclusivamente para garantir a segurança da plataforma e estabilidade do sistema Verlorin.</p>
             </div>
         </div>
     </div>
@@ -373,10 +536,11 @@
     <div id="contact-modal" class="modal-overlay" onclick="if(event.target===this)closeModal('contact-modal')">
         <div class="modal-content text-left">
             <button class="absolute top-4 right-4 p-2" onclick="closeModal('contact-modal')"><i data-lucide="x"></i></button>
-            <h2 class="text-2xl font-black mb-6 uppercase">Informações de Suporte</h2>
+            <h2 class="text-2xl font-black mb-6 uppercase text-zinc-900">Informações de Contato</h2>
             <div class="bg-zinc-50 p-8 rounded-2xl space-y-4">
-                <div><p class="font-bold text-zinc-900 uppercase text-xs tracking-widest text-left">E-mail Central:</p><p class="text-red-700 font-bold">support@vivellify-support.com</p></div>
-                <div><p class="font-bold text-zinc-900 uppercase text-xs tracking-widest text-left">Sede Administrativa:</p><p class="text-xs text-gray-500 italic">Vivello Solutions Ltd, Ashbourne, Derbyshire, Reino Unido, GB-DE61BX</p></div>
+                <div><p class="font-bold text-zinc-900 uppercase text-xs tracking-widest text-left">E-mail de Suporte Central:</p><p class="text-red-700 font-bold">support@vivellify-support.com</p></div>
+                <div><p class="font-bold text-zinc-900 uppercase text-xs tracking-widest text-left">Telefone Internacional:</p><p class="text-zinc-800 font-medium">+49 40 7430 2972</p></div>
+                <div><p class="font-bold text-zinc-900 uppercase text-xs tracking-widest text-left">Sede Administrativa:</p><p class="text-xs text-gray-500 italic leading-relaxed text-left">VIVELLO SOLUTIONS LTD, Ashbourne, Derbyshire, Reino Unido, GB-DE61BX</p></div>
             </div>
         </div>
     </div>
@@ -387,6 +551,7 @@
         AOS.init({ duration: 800, once: true, offset: 100 });
         lucide.createIcons();
 
+        // Cronômetro de Urgência
         function startTimer(duration, display) {
             let timer = duration, minutes, seconds;
             setInterval(function () {
@@ -408,9 +573,11 @@
         function toggleFaq(btn) {
             const content = btn.nextElementSibling;
             const icon = btn.querySelector('i');
-            if (content.style.maxHeight) { content.style.maxHeight = null; } 
-            else { content.style.maxHeight = content.scrollHeight + "px"; }
+            if (content.style.maxHeight) { content.style.maxHeight = null; icon.setAttribute('data-lucide', 'plus'); } 
+            else { content.style.maxHeight = content.scrollHeight + "px"; icon.setAttribute('data-lucide', 'minus'); }
+            lucide.createIcons();
         }
     </script>
 </body>
+
 </html>
