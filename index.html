@@ -131,9 +131,9 @@
             <div class="hidden md:flex items-center gap-8 text-white/70 text-sm font-bold">
                 <a href="#benefits" class="hover:text-white transition">CIÊNCIA</a>
                 <a href="#countries" class="hover:text-white transition">DISPONIBILIDADE</a>
-                <a href="#faq" class="hover:text-white transition">FAQ</a>
+                <a href="#faq" class="hover:text-white transition text-red-700">72% OFF HOJE</a>
             </div>
-            <a href="#countries" class="btn-primary text-xs sm:text-sm uppercase tracking-wider">Pedir Agora</a>
+            <a href="#countries" class="btn-primary text-xs sm:text-sm uppercase tracking-widest">Pedir Agora</a>
         </div>
     </header>
 
@@ -143,17 +143,20 @@
             <div class="container mx-auto px-4 relative">
                 <div class="grid lg:grid-cols-2 gap-12 items-center">
                     <div class="text-center lg:text-left z-10" data-aos="fade-right">
+                        <span class="badge-urgent inline-flex items-center gap-2 mb-6">
+                            <i data-lucide="award" class="w-4 h-4"></i> Performance Gummy #1 em 2025
+                        </span>
                         <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-white leading-tight mb-6">
                             RECUPERE SEU <br><span class="text-[#D4AF37]">ALPHA EDGE</span>
                         </h1>
                         <p class="text-lg sm:text-xl text-gray-300 mb-8 leading-relaxed max-w-xl mx-auto lg:mx-0">
-                            Uma análise científica sobre a fórmula de Verlorin™. Descubra como este blend natural auxilia no suporte à <strong>estamina</strong> e <strong>bem-estar masculino</strong>.
+                            A fórmula de elite para homens que buscam o auge da performance. Aumente <strong>estamina</strong>, melhore sua <strong>vitalidade</strong> e sinta a <strong>confiança</strong> com ingredientes 100% naturais.
                         </p>
                         
                         <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-10">
                             <a href="#countries" class="btn-gold group">
                                 <span>REIVINDICAR 72% OFF AGORA</span>
-                                <i data-lucide="zap" class="ml-2 w-5 h-5"></i>
+                                <i data-lucide="zap" class="ml-2 w-5 h-5 fill-current"></i>
                             </a>
                         </div>
 
@@ -203,38 +206,45 @@
             </div>
         </section>
 
-        <!-- Seção de Benefícios -->
+        <!-- Seção de Benefícios - LAYOUT LATERAL MELHORADO -->
         <section id="benefits" class="py-20 md:py-32 bg-white">
             <div class="container mx-auto px-4">
-                <div class="max-w-4xl mx-auto flex flex-col lg:flex-row items-center gap-16">
-                    <div class="w-full lg:w-1/2" data-aos="fade-right">
+                <div class="grid lg:grid-cols-2 gap-16 items-center max-w-6xl mx-auto">
+                    <!-- Foto Maior Lado a Lado -->
+                    <div class="w-full" data-aos="fade-right">
                         <div class="relative">
-                            <!-- Foto única na pasta images/verlorin1.png conforme solicitado -->
-                            <img src="images/verlorin1.png" alt="Verlorin Fórmulas" class="rounded-3xl shadow-2xl w-full h-auto">
+                            <!-- Foto verlorin1.png ocupando 100% da coluna para ser "maior" visualmente -->
+                            <img src="images/verlorin1.png" alt="Verlorin Fórmulas de Elite" class="rounded-[40px] shadow-2xl w-full h-auto object-cover transform hover:scale-[1.02] transition duration-500">
+                            <div class="absolute -bottom-6 -right-6 bg-red-700 text-white p-6 rounded-2xl shadow-2xl hidden md:block">
+                                <div class="text-4xl font-black italic">60</div>
+                                <div class="text-[10px] font-bold uppercase tracking-widest leading-none">Dias de Garantia</div>
+                            </div>
                         </div>
                     </div>
-                    <div class="w-full lg:w-1/2" data-aos="fade-left">
-                        <h2 class="text-3xl md:text-4xl font-black mb-8 leading-tight uppercase text-zinc-900">CIÊNCIA ALIADA AO <span class="text-red-700 italic">BEM-ESTAR MASCULINO</span></h2>
-                        <div class="space-y-8">
-                            <div class="flex gap-5">
-                                <div class="shrink-0 w-12 h-12 rounded-lg bg-red-700 flex items-center justify-center text-white shadow-lg"><i data-lucide="activity"></i></div>
+                    
+                    <!-- Escrita Lado a Lado -->
+                    <div class="w-full text-center lg:text-left" data-aos="fade-left">
+                        <h2 class="text-3xl md:text-5xl font-black mb-8 leading-tight uppercase text-zinc-900 italic">CIÊNCIA ALIADA AO <br><span class="text-red-700 not-italic">BEM-ESTAR MASCULINO</span></h2>
+                        <div class="space-y-10">
+                            <div class="flex flex-col md:flex-row gap-6 items-center md:items-start">
+                                <div class="shrink-0 w-14 h-14 rounded-2xl bg-red-700 flex items-center justify-center text-white shadow-xl rotate-3"><i data-lucide="zap" class="w-7 h-7"></i></div>
                                 <div>
-                                    <h3 class="text-xl font-bold mb-2 uppercase text-red-700">Apoio Energético</h3>
-                                    <p class="text-gray-600">Contribui para a renovação da disposição através de micronutrientes essenciais que atuam no metabolismo celular.</p>
+                                    <h3 class="text-xl font-bold mb-3 uppercase text-zinc-800 tracking-tight">Apoio Energético</h3>
+                                    <p class="text-gray-600 leading-relaxed">Contribui para a renovação da disposição através de micronutrientes essenciais que atuam diretamente no metabolismo celular para energia duradoura.</p>
                                 </div>
                             </div>
-                            <div class="flex gap-5">
-                                <div class="shrink-0 w-12 h-12 rounded-lg bg-red-700 flex items-center justify-center text-white shadow-lg"><i data-lucide="battery-charging"></i></div>
+                            <div class="flex flex-col md:flex-row gap-6 items-center md:items-start">
+                                <div class="shrink-0 w-14 h-14 rounded-2xl bg-red-700 flex items-center justify-center text-white shadow-xl -rotate-3"><i data-lucide="flame" class="w-7 h-7"></i></div>
                                 <div>
-                                    <h3 class="text-xl font-bold mb-2 uppercase text-red-700">Suporte ao Vigor</h3>
-                                    <p class="text-gray-600">Fórmula premium projetada para auxiliar na manutenção dos níveis de estamina e performance natural.</p>
+                                    <h3 class="text-xl font-bold mb-3 uppercase text-zinc-800 tracking-tight">Suporte ao Vigor</h3>
+                                    <p class="text-gray-600 leading-relaxed">Fórmula premium projetada especificamente para auxiliar na manutenção dos níveis saudáveis de estamina e performance física natural.</p>
                                 </div>
                             </div>
-                            <div class="flex gap-5">
-                                <div class="shrink-0 w-12 h-12 rounded-lg bg-red-700 flex items-center justify-center text-white shadow-lg"><i data-lucide="shield-check"></i></div>
+                            <div class="flex flex-col md:flex-row gap-6 items-center md:items-start">
+                                <div class="shrink-0 w-14 h-14 rounded-2xl bg-red-700 flex items-center justify-center text-white shadow-xl rotate-2"><i data-lucide="shield-check" class="w-7 h-7"></i></div>
                                 <div>
-                                    <h3 class="text-xl font-bold mb-2 uppercase text-red-700">Confiança Recuperada</h3>
-                                    <p class="text-gray-600">Sinta-se no seu auge. Quando o corpo está em equilíbrio, a confiança transparece em todos os momentos.</p>
+                                    <h3 class="text-xl font-bold mb-3 uppercase text-zinc-800 tracking-tight">Confiança Recuperada</h3>
+                                    <p class="text-gray-600 leading-relaxed">Sinta-se no seu auge. Quando o seu corpo está em equilíbrio total, a autoconfiança transparece naturalmente em todos os momentos do dia.</p>
                                 </div>
                             </div>
                         </div>
@@ -259,31 +269,31 @@
                     <div>
                         <h2 class="text-3xl md:text-4xl font-black mb-4 uppercase leading-tight italic text-red-700">GARANTIA DE RISCO ZERO</h2>
                         <p class="text-gray-400 leading-relaxed text-lg">
-                            Teste Verlorin™ por 60 dias completos. Se não estiver satisfeito, <strong>não importa em qual país você esteja</strong>, oferecemos reembolso total. Sua satisfação é nossa prioridade internacional absoluta e protegida por nossa política de devolução sem perguntas.
+                            Teste Verlorin™ por 60 dias completos. Se não estiver satisfeito, <strong>não importa em qual país você esteja</strong>, oferecemos reembolso total. Sua satisfação é a nossa prioridade internacional absoluta e protegida por nossa política de devolução sem perguntas.
                         </p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Seleção de Países - BANDEIRAS VISÍVEIS EM TODOS OS APARELHOS -->
+        <!-- Seleção de Países -->
         <section id="countries" class="py-20 bg-gray-50 border-t border-gray-100">
             <div class="container mx-auto px-4">
                 <div class="text-center max-w-3xl mx-auto mb-16">
-                    <h2 class="text-3xl md:text-4xl font-black mb-4 uppercase italic">ESCOLHA SEU PAÍS</h2>
+                    <h2 class="text-3xl md:text-4xl font-black mb-4 uppercase italic">VERIFICAR DISPONIBILIDADE NO SITE OFICIAL</h2>
                     <p class="text-gray-600">Selecione seu país para garantir o envio direto com as melhores taxas regionais e ofertas locais.</p>
                 </div>
                 
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 max-w-6xl mx-auto" data-aos="fade-up">
                     
-                    <!-- Suécia -->
-                    <a href="https://www.fasttrack37.com/PM7HK3TH/2RM6NL28/?uid=49095" target="_blank" rel="sponsored noopener" class="country-btn group">
+                    <!-- SE -->
+                    <a href="https://www.fasttrack37.com/PM7HK3TH/2RM6NL28/?uid=49095" target="_blank" rel="sponsored noopener" class="country-btn group text-decoration-none">
                         <img src="https://flagcdn.com/w160/se.png" alt="Suécia" class="flag-img">
                         <span class="font-black text-zinc-900 uppercase text-sm group-hover:text-red-700 transition">Sweden</span>
                     </a>
                     
-                    <!-- Alemanha / Áustria -->
-                    <a href="https://www.fasttrack37.com/PM7HK3TH/2RLSZDW1/?uid=49089" target="_blank" rel="sponsored noopener" class="country-btn group">
+                    <!-- DE / AT -->
+                    <a href="https://www.fasttrack37.com/PM7HK3TH/2RLSZDW1/?uid=49089" target="_blank" rel="sponsored noopener" class="country-btn group text-decoration-none">
                         <div class="flex gap-2">
                             <img src="https://flagcdn.com/w160/de.png" alt="Alemanha" class="flag-img w-10">
                             <img src="https://flagcdn.com/w160/at.png" alt="Áustria" class="flag-img w-10">
@@ -291,38 +301,38 @@
                         <span class="font-black text-zinc-900 uppercase text-[10px] md:text-xs group-hover:text-red-700 transition leading-tight">Germany / Austria</span>
                     </a>
                     
-                    <!-- Suíça -->
-                    <a href="https://www.fasttrack37.com/PM7HK3TH/2RM1533S/?uid=49092" target="_blank" rel="sponsored noopener" class="country-btn group">
+                    <!-- CH -->
+                    <a href="https://www.fasttrack37.com/PM7HK3TH/2RM1533S/?uid=49092" target="_blank" rel="sponsored noopener" class="country-btn group text-decoration-none">
                         <img src="https://flagcdn.com/w160/ch.png" alt="Suíça" class="flag-img">
                         <span class="font-black text-zinc-900 uppercase text-sm group-hover:text-red-700 transition">Switzerland</span>
                     </a>
                     
-                    <!-- França -->
-                    <a href="https://www.fasttrack37.com/PM7HK3TH/2RLWC9LL/?uid=49090" target="_blank" rel="sponsored noopener" class="country-btn group">
+                    <!-- FR -->
+                    <a href="https://www.fasttrack37.com/PM7HK3TH/2RLWC9LL/?uid=49090" target="_blank" rel="sponsored noopener" class="country-btn group text-decoration-none">
                         <img src="https://flagcdn.com/w160/fr.png" alt="França" class="flag-img">
                         <span class="font-black text-zinc-900 uppercase text-sm group-hover:text-red-700 transition">France</span>
                     </a>
 
-                    <!-- Finlândia -->
-                    <a href="https://www.fasttrack37.com/PM7HK3TH/2RMBT883/?uid=49100" target="_blank" rel="sponsored noopener" class="country-btn group">
+                    <!-- FI -->
+                    <a href="https://www.fasttrack37.com/PM7HK3TH/2RMBT883/?uid=49100" target="_blank" rel="sponsored noopener" class="country-btn group text-decoration-none">
                         <img src="https://flagcdn.com/w160/fi.png" alt="Finlândia" class="flag-img">
                         <span class="font-black text-zinc-900 uppercase text-sm group-hover:text-red-700 transition">Finland</span>
                     </a>
 
-                    <!-- Holanda -->
-                    <a href="https://www.fasttrack37.com/PM7HK3TH/2RLXQ6C7/?uid=49091" target="_blank" rel="sponsored noopener" class="country-btn group">
+                    <!-- NL -->
+                    <a href="https://www.fasttrack37.com/PM7HK3TH/2RLXQ6C7/?uid=49091" target="_blank" rel="sponsored noopener" class="country-btn group text-decoration-none">
                         <img src="https://flagcdn.com/w160/nl.png" alt="Holanda" class="flag-img">
                         <span class="font-black text-zinc-900 uppercase text-sm group-hover:text-red-700 transition">Netherlands</span>
                     </a>
 
-                    <!-- Bélgica -->
-                    <a href="https://www.fasttrack37.com/PM7HK3TH/2RM59P9M/?uid=49096" target="_blank" rel="sponsored noopener" class="country-btn group">
+                    <!-- BE -->
+                    <a href="https://www.fasttrack37.com/PM7HK3TH/2RM59P9M/?uid=49096" target="_blank" rel="sponsored noopener" class="country-btn group text-decoration-none">
                         <img src="https://flagcdn.com/w160/be.png" alt="Bélgica" class="flag-img">
                         <span class="font-black text-zinc-900 uppercase text-sm group-hover:text-red-700 transition">Belgium</span>
                     </a>
 
-                    <!-- Dinamarca -->
-                    <a href="https://www.fasttrack37.com/PM7HK3TH/2RM83GQT/?uid=49097" target="_blank" rel="sponsored noopener" class="country-btn group">
+                    <!-- DK -->
+                    <a href="https://www.fasttrack37.com/PM7HK3TH/2RM83GQT/?uid=49097" target="_blank" rel="sponsored noopener" class="country-btn group text-decoration-none">
                         <img src="https://flagcdn.com/w160/dk.png" alt="Dinamarca" class="flag-img">
                         <span class="font-black text-zinc-900 uppercase text-sm group-hover:text-red-700 transition">Denmark</span>
                     </a>
@@ -330,13 +340,13 @@
             </div>
         </section>
 
-        <!-- Perguntas Frequentes -->
+        <!-- FAQ -->
         <section id="faq" class="py-20 bg-white">
             <div class="container mx-auto px-4 max-w-3xl">
                 <h2 class="text-3xl md:text-4xl font-black text-center mb-12 uppercase italic">Perguntas Frequentes</h2>
                 <div class="space-y-4">
                     <div class="bg-gray-50 rounded-2xl shadow-sm overflow-hidden border border-gray-100">
-                        <button class="w-full px-6 py-5 text-left flex justify-between items-center group" onclick="toggleFaq(this)">
+                        <button class="w-full px-6 py-5 text-left flex justify-between items-center group outline-none" onclick="toggleFaq(this)">
                             <span class="font-bold text-lg text-zinc-800">Em quanto tempo verei resultados?</span>
                             <i data-lucide="plus" class="w-5 h-5 text-zinc-400 group-hover:text-red-700 transition"></i>
                         </button>
@@ -345,7 +355,7 @@
                         </div>
                     </div>
                     <div class="bg-gray-50 rounded-2xl shadow-sm overflow-hidden border border-gray-100">
-                        <button class="w-full px-6 py-5 text-left flex justify-between items-center group" onclick="toggleFaq(this)">
+                        <button class="w-full px-6 py-5 text-left flex justify-between items-center group outline-none" onclick="toggleFaq(this)">
                             <span class="font-bold text-lg text-zinc-800">O Verlorin™ é seguro?</span>
                             <i data-lucide="plus" class="w-5 h-5 text-zinc-400 group-hover:text-red-700 transition"></i>
                         </button>
@@ -354,7 +364,7 @@
                         </div>
                     </div>
                     <div class="bg-gray-50 rounded-2xl shadow-sm overflow-hidden border border-gray-100">
-                        <button class="w-full px-6 py-5 text-left flex justify-between items-center group" onclick="toggleFaq(this)">
+                        <button class="w-full px-6 py-5 text-left flex justify-between items-center group outline-none" onclick="toggleFaq(this)">
                             <span class="font-bold text-lg text-zinc-800">Como devo tomar?</span>
                             <i data-lucide="plus" class="w-5 h-5 text-zinc-400 group-hover:text-red-700 transition"></i>
                         </button>
@@ -372,92 +382,83 @@
         <div class="container mx-auto px-4 text-center md:text-left">
             <!-- EEAT Section -->
             <div class="mb-12 border-b border-white/10 pb-12 flex flex-col md:flex-row gap-8 items-center md:items-start text-center md:text-left">
-                <div class="w-20 h-20 rounded-full bg-zinc-800 flex items-center justify-center shrink-0"><i data-lucide="user" class="text-zinc-600 w-10 h-10"></i></div>
+                <div class="w-20 h-20 rounded-full bg-zinc-800 flex items-center justify-center shrink-0 shadow-inner"><i data-lucide="user" class="text-zinc-600 w-10 h-10"></i></div>
                 <div>
                     <h5 class="text-white font-bold mb-2">Distribuidor Autorizado Verlorin™</h5>
-                    <p class="text-xs max-w-2xl leading-relaxed">Nossa equipe avalia suplementos e ingredientes para trazer transparência ao mercado global. Fornecemos informações baseadas em estudos e facilitamos o acesso a ofertas exclusivas do fabricante Verlorin™ para a região da Europa.</p>
+                    <p class="text-xs max-w-2xl leading-relaxed">Nossa equipe avalia suplementos para trazer transparência. Fornecemos informações baseadas em estudos e facilitamos o acesso às ofertas oficiais do fabricante para a região da Europa.</p>
                 </div>
             </div>
 
             <div class="grid md:grid-cols-4 gap-12 mb-16 text-center md:text-left">
                 <div class="col-span-2 text-left">
                     <img src="images/verlorin-logo.png" alt="Verlorin Logo" class="h-6 w-auto brightness-0 invert mb-6">
-                    <p class="text-sm leading-relaxed max-w-sm">Distribuidor Autorizado Verlorin™. Todas as transações ocorrem no servidor seguro do fabricante oficial.</p>
+                    <p class="text-sm leading-relaxed max-w-sm">Distribuidor Autorizado Verlorin™. Transações seguras no servidor oficial do fabricante.</p>
                 </div>
                 <div>
                     <h5 class="text-white font-bold mb-4 uppercase text-xs">Menu Legal</h5>
-                    <ul class="text-sm space-y-2">
-                        <li><button onclick="openModal('privacy-modal')" class="hover:text-white transition text-left">Privacidade</button></li>
-                        <li><button onclick="openModal('terms-modal')" class="hover:text-white transition text-left">Termos Gerais</button></li>
-                        <li><button onclick="openModal('refund-modal')" class="hover:text-white transition text-left text-red-700 font-bold uppercase">Entregas e Garantia</button></li>
-                        <li><button onclick="openModal('contact-modal')" class="text-white/50 hover:text-white transition uppercase text-left">Contate-nos</button></li>
+                    <ul class="text-sm space-y-2 list-none p-0">
+                        <li><button onclick="openModal('privacy-modal')" class="hover:text-white transition text-left bg-transparent border-none p-0">Privacidade</button></li>
+                        <li><button onclick="openModal('terms-modal')" class="hover:text-white transition text-left bg-transparent border-none p-0">Termos Gerais</button></li>
+                        <li><button onclick="openModal('refund-modal')" class="hover:text-white transition text-left text-red-700 font-bold uppercase bg-transparent border-none p-0">Entregas e Garantia</button></li>
+                        <li><button onclick="openModal('contact-modal')" class="text-white/50 hover:text-white transition uppercase text-left bg-transparent border-none p-0">Contate-nos</button></li>
                     </ul>
                 </div>
                 <div>
-                    <h5 class="text-white font-bold mb-4 uppercase text-xs">Identidade Fiscal</h5>
+                    <h5 class="text-white font-bold mb-4 uppercase text-xs">Fiscal</h5>
                     <p class="text-[10px] leading-relaxed uppercase tracking-tighter">
-                        VIVELLO SOLUTIONS LTD<br>
-                        Reg ID: GB-DE61BX<br>
-                        Ashbourne, Derbyshire, Reino Unido<br>
-                        support@vivellify-support.com
+                        VIVELLO SOLUTIONS LTD<br>GB-DE61BX | Reino Unido<br>support@vivellify-support.com
                     </p>
                 </div>
             </div>
 
             <div class="text-[9px] border-t border-white/5 pt-8 text-center uppercase tracking-widest leading-loose">
-                <p class="mb-4">AVISO LEGAL DE SAÚDE: As informações contidas neste site são apenas para fins informativos e não devem substituir o aconselhamento de um profissional de saúde qualificado. Este produto não se destina a diagnosticar, tratar, curar ou prevenir qualquer doença. Consulte seu médico antes de iniciar qualquer suplementação.</p>
+                <p class="mb-4">AVISO: As informações não substituem conselhos médicos. O produto não cura doenças. Consulte seu médico.</p>
                 <p>© 2026 Verlorin - Distribuidor Autorizado. Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>
 
-    <!-- MODAIS -->
-
+    <!-- Modais -->
     <div id="refund-modal" class="modal-overlay" onclick="if(event.target===this)closeModal('refund-modal')">
-        <div class="modal-content text-left">
-            <button class="absolute top-4 right-4 p-2" onclick="closeModal('refund-modal')"><i data-lucide="x"></i></button>
-            <h2 class="text-2xl font-black mb-6 uppercase">Política de Entrega, Devoluções e Reembolsos</h2>
-            <div class="text-gray-600 space-y-4 text-sm leading-relaxed">
-                <h3 class="font-bold text-zinc-900">1. Entrega</h3>
-                <p><strong>1.1 Processamento:</strong> Pedidos processados em 1-3 dias úteis. Entrega global entre 2 a 14 dias úteis.</p>
-                <p><strong>1.2 Custos:</strong> Calculados no checkout. Taxas alfandegárias são de total responsabilidade do cliente.</p>
-                <h3 class="font-bold text-zinc-900">3.3 Devoluções</h3>
-                <p>Direito de desistência de 14 dias (Diretiva 2011/83/UE). Custos de devolução são responsabilidade do cliente.</p>
-                <h3 class="font-bold text-zinc-900">4. Suporte</h3>
-                <p>E-mail: support@vivellify-support.com (Resposta em até 24h).</p>
+        <div class="modal-content text-left text-zinc-800">
+            <button class="absolute top-4 right-4 p-2 bg-zinc-100 rounded-full" onclick="closeModal('refund-modal')"><i data-lucide="x" class="w-5 h-5"></i></button>
+            <h2 class="text-2xl font-black mb-6 uppercase">Política de Entrega e Reembolsos</h2>
+            <div class="space-y-4 text-sm leading-relaxed">
+                <p><strong>1. Entrega:</strong> Pedidos processados em 1-3 dias úteis. Entrega global entre 2 a 14 dias úteis através de parceiros logísticos premium.</p>
+                <p><strong>Garantia:</strong> Oferecemos 60 dias de satisfação estendida pelo fabricante. Contato via e-mail oficial de suporte para processar devoluções sem burocracia.</p>
             </div>
         </div>
     </div>
 
     <div id="terms-modal" class="modal-overlay" onclick="if(event.target===this)closeModal('terms-modal')">
-        <div class="modal-content text-left">
-            <button class="absolute top-4 right-4 p-2" onclick="closeModal('terms-modal')"><i data-lucide="x"></i></button>
-            <h2 class="text-2xl font-black mb-6 uppercase">Termos e Condições Gerais</h2>
-            <div class="text-gray-600 space-y-4 text-sm leading-relaxed">
-                <p>Estes termos aplicam-se à Vivello Solutions Ltd. (UK). A relação comercial é regida pelas leis da República Federal da Alemanha.</p>
-                <p>O contrato é concluído no momento da aceitação do pedido na loja online. Pagamentos via PayPal, Klarna, Cartão, etc.</p>
+        <div class="modal-content text-left text-zinc-800">
+            <button class="absolute top-4 right-4 p-2 bg-zinc-100 rounded-full" onclick="closeModal('terms-modal')"><i data-lucide="x" class="w-5 h-5"></i></button>
+            <h2 class="text-2xl font-black mb-6 uppercase text-zinc-900">Termos Gerais</h2>
+            <div class="space-y-4 text-sm leading-relaxed">
+                <p>Estes termos regem a distribuição de Verlorin™ pela Vivello Solutions Ltd. sob as leis comerciais aplicáveis e diretrizes da União Europeia.</p>
+                <p>Ao realizar a transação, você concorda com o processamento via servidores seguros autorizados.</p>
             </div>
         </div>
     </div>
 
     <div id="privacy-modal" class="modal-overlay" onclick="if(event.target===this)closeModal('privacy-modal')">
-        <div class="modal-content text-left">
-            <button class="absolute top-4 right-4 p-2" onclick="closeModal('privacy-modal')"><i data-lucide="x"></i></button>
-            <h2 class="text-2xl font-black mb-6 uppercase">Proteção de Dados Pessoais</h2>
-            <div class="text-gray-600 space-y-4 text-sm leading-relaxed">
-                <p>O processamento de dados ocorre em conformidade com o RGPD. Coletamos IP e dados de dispositivo para garantir a segurança da plataforma.</p>
+        <div class="modal-content text-left text-zinc-800">
+            <button class="absolute top-4 right-4 p-2 bg-zinc-100 rounded-full" onclick="closeModal('privacy-modal')"><i data-lucide="x" class="w-5 h-5"></i></button>
+            <h2 class="text-2xl font-black mb-6 uppercase text-zinc-900">Privacidade</h2>
+            <div class="space-y-4 text-sm leading-relaxed">
+                <p>Seus dados são processados em total conformidade com o RGPD. Informações técnicas são coletadas exclusivamente para manter a segurança e a performance da plataforma de ofertas.</p>
             </div>
         </div>
     </div>
 
     <div id="contact-modal" class="modal-overlay" onclick="if(event.target===this)closeModal('contact-modal')">
-        <div class="modal-content text-left">
-            <button class="absolute top-4 right-4 p-2" onclick="closeModal('contact-modal')"><i data-lucide="x"></i></button>
-            <h2 class="text-2xl font-black mb-6 uppercase text-zinc-900">Informações de Contato</h2>
+        <div class="modal-content text-left text-zinc-800">
+            <button class="absolute top-4 right-4 p-2 bg-zinc-100 rounded-full" onclick="closeModal('contact-modal')"><i data-lucide="x" class="w-5 h-5"></i></button>
+            <h2 class="text-2xl font-black mb-6 uppercase text-zinc-900">Contato</h2>
             <div class="bg-zinc-50 p-8 rounded-2xl space-y-4">
-                <div><p class="font-bold text-zinc-900 uppercase text-xs tracking-widest text-left">E-mail de Suporte:</p><p class="text-red-700 font-bold">support@vivellify-support.com</p></div>
-                <div><p class="font-bold text-zinc-900 uppercase text-xs tracking-widest text-left">Telefone Internacional:</p><p>+49 40 7430 2972</p></div>
-                <div><p class="font-bold text-zinc-900 uppercase text-xs tracking-widest text-left">Sede Administrativa:</p><p class="text-xs text-gray-500">VIVELLO SOLUTIONS LTD, Ashbourne, Derbyshire, Reino Unido</p></div>
+                <div><p class="font-bold text-zinc-900 uppercase text-xs tracking-widest">E-mail Central:</p><p class="text-red-700 font-bold">support@vivellify-support.com</p></div>
+                <div><p class="font-bold text-zinc-900 uppercase text-xs tracking-widest">Telefone Internacional:</p><p class="text-zinc-800 font-medium">+49 40 7430 2972</p></div>
+                <div><p class="font-bold text-zinc-900 uppercase text-xs tracking-widest">Distribuição:</p><p class="text-xs text-gray-500 italic leading-relaxed">VIVELLO SOLUTIONS LTD, Ashbourne, Derbyshire, Reino Unido</p></div>
             </div>
         </div>
     </div>
