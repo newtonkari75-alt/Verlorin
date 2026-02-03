@@ -93,12 +93,11 @@
         .modal-overlay.active { display: flex; }
         .modal-content { background: white; border-radius: 16px; max-width: 850px; width: 100%; max-height: 85vh; overflow-y: auto; padding: 40px; position: relative; }
 
-        /* Botão de País Sem Borda */
         .country-btn {
             background: white; border-radius: 24px; padding: 25px 15px;
             display: flex; flex-direction: column; align-items: center; justify-content: center;
             gap: 12px; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); text-decoration: none;
-            border: none; /* Borda removida conforme solicitado */
+            border: none;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
         }
 
@@ -201,15 +200,16 @@
             </div>
         </section>
 
-        <!-- Secção de Benefícios - LAYOUT LADO A LADO SEM BORDAS -->
+        <!-- Secção de Benefícios - LAYOUT LADO A LADO SEM BORDAS E SEM SOMBRA -->
         <section id="benefits" class="py-24 md:py-36 bg-white">
             <div class="container mx-auto px-4">
                 <div class="grid lg:grid-cols-2 gap-20 items-center max-w-6xl mx-auto">
-                    <!-- Foto Maior Sem Borda -->
+                    <!-- Foto verlorin1.png - Sem borda e Sem sombra -->
                     <div class="w-full order-1 lg:order-1" data-aos="fade-right">
                         <div class="relative">
-                            <!-- Borda border-8 removida conforme solicitado -->
-                            <img src="images/verlorin1.png" alt="Verlorin Benefícios" class="rounded-[40px] shadow-2xl w-full h-auto object-cover transform hover:scale-[1.02] transition duration-500">
+                            <!-- Removido shadow-2xl conforme solicitado -->
+                            <img src="images/verlorin1.png" alt="Verlorin Benefícios" class="rounded-[40px] w-full h-auto object-cover transform hover:scale-[1.02] transition duration-500">
+                            <!-- Badge de Garantia mantido discreto -->
                             <div class="absolute -top-6 -left-6 bg-zinc-950 text-white p-6 rounded-2xl shadow-2xl hidden md:block">
                                 <div class="text-4xl font-black italic text-red-700 leading-none">60</div>
                                 <div class="text-[10px] font-bold uppercase tracking-widest">DIAS DE GARANTIA</div>
@@ -252,7 +252,6 @@
         <section class="py-24 bg-zinc-950 text-white border-t border-white/5">
             <div class="container mx-auto px-4">
                 <div class="max-w-5xl mx-auto p-8 md:p-20 rounded-[50px] flex flex-col md:flex-row items-center gap-16" data-aos="fade-up">
-                    <!-- Borda tracejada removida do contentor conforme solicitado -->
                     <div class="shrink-0 flex items-center justify-center scale-110">
                         <div class="relative flex flex-col items-center">
                             <i data-lucide="shield-check" class="w-44 h-44 text-red-700 drop-shadow-[0_0_30px_rgba(185,28,28,0.4)]"></i>
@@ -265,7 +264,7 @@
                     <div>
                         <h2 class="text-3xl md:text-5xl font-black mb-6 uppercase leading-tight italic text-red-700">Garantia de Risco Zero</h2>
                         <p class="text-gray-400 leading-relaxed text-lg italic">
-                            Teste Verlorin™ por 60 dias completos. Se não estiver 100% satisfeito com o suporte à sua vitalidade, <strong>não importa o seu país</strong>, oferecemos reembolso total. Sua confiança é nossa maior prioridade internacional.
+                            Teste Verlorin™ por 60 dias completos. Se não estiver satisfeito com o suporte à sua vitalidade, <strong>não importa o seu país</strong>, oferecemos reembolso total. Sua confiança é nossa maior prioridade internacional.
                         </p>
                     </div>
                 </div>
@@ -365,38 +364,37 @@
         </section>
     </main>
 
-    <!-- Rodapé - Informações Fiscais Discretas no Final -->
+    <!-- Footer -->
     <footer class="bg-black py-24 text-gray-500 border-t border-white/5">
         <div class="container mx-auto px-4">
-            
             <div class="grid md:grid-cols-4 gap-16 mb-20 text-center md:text-left">
-                <div class="col-span-2">
+                <div class="col-span-2 text-left">
                     <img src="images/verlorin-logo.png" alt="Verlorin" class="h-6 w-auto brightness-0 invert mb-8 mx-auto md:mx-0">
                     <p class="text-sm leading-relaxed max-w-sm mx-auto md:mx-0">O Verlorin™ é formulado com ativos naturais de alta pureza focados no público masculino de alto desempenho.</p>
                 </div>
                 <div>
                     <h5 class="text-white font-bold mb-6 uppercase text-xs tracking-widest">Informações Legais</h5>
                     <ul class="text-sm space-y-3 list-none p-0">
-                        <li><button onclick="openModal('privacy-modal')" class="hover:text-white transition">Privacidade</button></li>
-                        <li><button onclick="openModal('terms-modal')" class="hover:text-white transition">Termos de Uso</button></li>
-                        <li><button onclick="openModal('refund-modal')" class="hover:text-white transition text-red-700 font-bold uppercase">Garantia e Entrega</button></li>
-                        <li><button onclick="openModal('contact-modal')" class="text-white/40 hover:text-white transition">Suporte</button></li>
+                        <li><button onclick="openModal('privacy-modal')" class="hover:text-white transition text-left bg-transparent border-none p-0">Privacidade</button></li>
+                        <li><button onclick="openModal('terms-modal')" class="hover:text-white transition text-left bg-transparent border-none p-0">Termos de Uso</button></li>
+                        <li><button onclick="openModal('refund-modal')" class="hover:text-white transition text-left text-red-700 font-bold uppercase bg-transparent border-none p-0">Garantia e Entrega</button></li>
+                        <li><button onclick="openModal('contact-modal')" class="text-white/40 hover:text-white transition uppercase text-left bg-transparent border-none p-0">Contate-nos</button></li>
                     </ul>
                 </div>
                 <div>
                     <h5 class="text-white font-bold mb-6 uppercase text-xs tracking-widest text-center md:text-left">Distribuição Europeia</h5>
-                    <p class="text-[10px] leading-relaxed uppercase tracking-tighter">
+                    <p class="text-[10px] leading-relaxed uppercase tracking-tighter text-left">
                         VIVELLO SOLUTIONS LTD<br>TAX ID: GB-DE61BX<br>Ashbourne, Reino Unido<br>support@vivellify-support.com
                     </p>
                 </div>
             </div>
 
-            <!-- Secção EEAT / Distribuidor Autorizado (Discreta para o Google Ads) -->
+            <!-- Secção EEAT / Distribuidor Autorizado -->
             <div class="mb-12 border-t border-white/5 pt-12 flex flex-col md:flex-row gap-10 items-center md:items-start text-center md:text-left opacity-40 hover:opacity-100 transition duration-500">
                 <div class="w-16 h-16 rounded-full bg-zinc-900 border border-white/10 flex items-center justify-center shrink-0 shadow-xl"><i data-lucide="shield" class="text-zinc-600 w-8 h-8"></i></div>
                 <div>
-                    <h5 class="text-white font-bold mb-3 uppercase text-[10px] tracking-widest">Aviso de Distribuição Autorizada</h5>
-                    <p class="text-[11px] max-w-3xl leading-relaxed">Este portal é um canal de distribuição autorizado. A nossa equipa audita a qualidade de Verlorin™ para assegurar conformidade na Europa. Todas as transações financeiras e envios logísticos são processados exclusivamente através dos armazéns oficiais do fabricante.</p>
+                    <h5 class="text-white font-bold mb-3 uppercase text-[10px] tracking-widest text-left">Aviso de Distribuição Autorizada</h5>
+                    <p class="text-[11px] max-w-3xl leading-relaxed text-left">Este portal é um canal de distribuição autorizado. A nossa equipa audita a qualidade de Verlorin™ para assegurar conformidade na Europa. Todas as transações financeiras e envios logísticos são processados exclusivamente através dos armazéns oficiais do fabricante.</p>
                 </div>
             </div>
 
@@ -422,7 +420,7 @@
     <div id="terms-modal" class="modal-overlay" onclick="if(event.target===this)closeModal('terms-modal')">
         <div class="modal-content text-left text-zinc-800">
             <button class="absolute top-4 right-4 p-2 bg-gray-50 rounded-full" onclick="closeModal('terms-modal')"><i data-lucide="x" class="w-5 h-5"></i></button>
-            <h2 class="text-2xl font-black mb-6 uppercase border-b pb-4">Termos</h2>
+            <h2 class="text-2xl font-black mb-6 uppercase border-b pb-4 text-zinc-900">Termos</h2>
             <p class="text-sm leading-relaxed">Vivello Solutions Ltd. distribuidor autorizado de Verlorin™ sob as leis de e-commerce da União Europeia.</p>
         </div>
     </div>
@@ -430,7 +428,7 @@
     <div id="privacy-modal" class="modal-overlay" onclick="if(event.target===this)closeModal('privacy-modal')">
         <div class="modal-content text-left text-zinc-800">
             <button class="absolute top-4 right-4 p-2 bg-gray-50 rounded-full" onclick="closeModal('privacy-modal')"><i data-lucide="x" class="w-5 h-5"></i></button>
-            <h2 class="text-2xl font-black mb-6 uppercase border-b pb-4">Privacidade</h2>
+            <h2 class="text-2xl font-black mb-6 uppercase border-b pb-4 text-zinc-900">Privacidade</h2>
             <p class="text-sm leading-relaxed">Dados processados sob o RGPD para garantir a segurança da transação e suporte pós-venda.</p>
         </div>
     </div>
@@ -438,7 +436,7 @@
     <div id="contact-modal" class="modal-overlay" onclick="if(event.target===this)closeModal('contact-modal')">
         <div class="modal-content text-left text-zinc-800 shadow-2xl">
             <button class="absolute top-4 right-4 p-2 bg-gray-50 rounded-full" onclick="closeModal('contact-modal')"><i data-lucide="x" class="w-5 h-5"></i></button>
-            <h2 class="text-2xl font-black mb-8 uppercase italic border-b pb-4">Contacto</h2>
+            <h2 class="text-2xl font-black mb-8 uppercase italic border-b pb-4 text-zinc-900">Contacto</h2>
             <div class="bg-gray-50 p-8 rounded-2xl space-y-6">
                 <div><p class="font-black text-zinc-900 uppercase text-[10px] tracking-widest mb-1">E-mail Suporte:</p><p class="text-red-700 font-bold text-lg">support@vivellify-support.com</p></div>
                 <div><p class="font-black text-zinc-900 uppercase text-[10px] tracking-widest mb-1">Linha Europeia:</p><p class="text-zinc-800 font-semibold">+49 40 7430 2972</p></div>
