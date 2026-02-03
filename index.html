@@ -10,13 +10,13 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="images/faviconV2.png">
 
-    <!-- SEO & Compliance Meta Tags -->
+    <!-- SEO Avançado & Compliance -->
     <title>Verlorin™ | Suporte de Performance Masculina - Ofertas Oficiais</title>
-    <meta name="description" content="Análise e acesso às ofertas de Verlorin™. Gomas de performance masculina com Tongkat Ali e L-Lisina. 72% OFF hoje. Envio para SE, DE, AT, CH, FR, FI, NL, BE, DK.">
+    <meta name="description" content="Recupere sua vitalidade com Verlorin™. Gomas de performance masculina com Tongkat Ali e L-Lisina. 72% OFF hoje. Envio para SE, DE, AT, CH, FR, FI, NL, BE, DK.">
+    <meta name="keywords" content="Verlorin, gomas masculinas, vitalidade, performance, natural, testosterona">
     <meta name="author" content="Saúde & Performance Masculina">
     <meta name="robots" content="index, follow">
     
-    <!-- Tag Canonical -->
     <link rel="canonical" href="https://verlorin.vercel.app/">
 
     <!-- Open Graph -->
@@ -26,14 +26,14 @@
     <meta property="og:description" content="Fórmula natural de elite para energia e estamina. Aproveite o desconto de 72% hoje.">
     <meta property="og:image" content="images/verlorin3.png">
 
-    <!-- Preloads & DNS Prefetch -->
+    <!-- Tags Técnicas de Performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="dns-prefetch" href="https://unpkg.com">
     <link rel="preload" as="image" href="images/verlorin3.png">
     <link rel="preload" as="image" href="images/verlorin1.png">
 
-    <!-- Structured Data (JSON-LD) -->
+    <!-- Dados Estruturados (JSON-LD) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org/",
@@ -57,7 +57,7 @@
     }
     </script>
 
-    <!-- Tailwind CSS -->
+    <!-- Tailwind CSS & Bibliotecas -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -70,139 +70,46 @@
             --gold: #D4AF37;
             --gold-light: #F5E6A3;
             --charcoal: #111111;
-            --slate: #2D2D2D;
             --white: #FFFFFF;
         }
 
-        body {
-            font-family: 'Inter', sans-serif;
-            color: var(--charcoal);
-            background: var(--white);
-            overflow-x: hidden;
-        }
-
-        h1, h2, h3 {
-            font-family: 'Oswald', sans-serif;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
+        body { font-family: 'Inter', sans-serif; color: var(--charcoal); background: var(--white); overflow-x: hidden; }
+        h1, h2, h3 { font-family: 'Oswald', sans-serif; text-transform: uppercase; letter-spacing: 0.5px; }
 
         .btn-primary {
             background: linear-gradient(135deg, var(--crimson) 0%, var(--crimson-dark) 100%);
-            color: var(--white);
-            padding: 12px 24px;
-            border-radius: 8px;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(139, 0, 0, 0.3);
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
+            color: var(--white); padding: 12px 24px; border-radius: 8px; font-weight: 700;
+            text-transform: uppercase; letter-spacing: 1px; transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(139, 0, 0, 0.3); display: inline-flex; align-items: center; justify-content: center;
         }
 
         .btn-gold {
             background: linear-gradient(135deg, var(--gold) 0%, #B8962F 100%);
-            color: var(--charcoal);
-            padding: 16px 40px;
-            border-radius: 8px;
-            font-weight: 800;
-            font-size: 18px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
+            color: var(--charcoal); padding: 16px 40px; border-radius: 8px; font-weight: 800;
+            font-size: 18px; text-transform: uppercase; letter-spacing: 1px; transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4); display: inline-flex; align-items: center; justify-content: center;
         }
 
-        .hero-gradient {
-            background: radial-gradient(circle at top right, #2D1A1A, #111111);
-        }
+        .hero-gradient { background: radial-gradient(circle at top right, #2D1A1A, #111111); }
+        .badge-urgent { background: var(--crimson); color: var(--white); padding: 6px 16px; border-radius: 9999px; font-size: 12px; font-weight: 700; text-transform: uppercase; animation: pulse 2s infinite; }
+        
+        @keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.05); } 100% { transform: scale(1); } }
 
-        .badge-urgent {
-            background: var(--crimson);
-            color: var(--white);
-            padding: 6px 16px;
-            border-radius: 9999px;
-            font-size: 12px;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            animation: pulse 2s infinite;
-        }
-
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-            100% { transform: scale(1); }
-        }
-
-        .modal-overlay {
-            position: fixed;
-            inset: 0;
-            background: rgba(0, 0, 0, 0.9);
-            z-index: 1000;
-            display: none;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-            backdrop-filter: blur(5px);
-        }
-
-        .modal-overlay.active {
-            display: flex;
-        }
-
-        .modal-content {
-            background: white;
-            border-radius: 16px;
-            max-width: 850px;
-            width: 100%;
-            max-height: 85vh;
-            overflow-y: auto;
-            padding: 40px;
-            position: relative;
-        }
+        .modal-overlay { position: fixed; inset: 0; background: rgba(0, 0, 0, 0.9); z-index: 1000; display: none; align-items: center; justify-content: center; padding: 20px; backdrop-filter: blur(5px); }
+        .modal-overlay.active { display: flex; }
+        .modal-content { background: white; border-radius: 16px; max-width: 850px; width: 100%; max-height: 85vh; overflow-y: auto; padding: 40px; position: relative; }
 
         .country-btn {
-            background: white;
-            border: 2px solid #f3f4f6;
-            border-radius: 20px;
-            padding: 30px 16px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: 15px;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            text-decoration: none;
+            background: white; border: 2px solid #f3f4f6; border-radius: 20px; padding: 30px 16px;
+            display: flex; flex-direction: column; align-items: center; justify-content: center;
+            gap: 15px; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); text-decoration: none;
         }
 
-        .country-btn:hover {
-            border-color: var(--crimson);
-            transform: translateY(-8px);
-            box-shadow: 0 15px 30px rgba(139, 0, 0, 0.12);
-        }
+        .country-btn:hover { border-color: var(--crimson); transform: translateY(-8px); box-shadow: 0 15px 30px rgba(139, 0, 0, 0.12); }
+        .flag-img { width: 60px; height: auto; border-radius: 4px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); }
+        .product-shadow { filter: drop-shadow(0 20px 30px rgba(0,0,0,0.5)); }
 
-        .flag-img {
-            width: 60px;
-            height: auto;
-            border-radius: 4px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-        }
-
-        .product-shadow {
-            filter: drop-shadow(0 20px 30px rgba(0,0,0,0.5));
-        }
-
-        @keyframes float {
-            0% { transform: translateY(0px); }
-            50% { transform: translateY(-20px); }
-            100% { transform: translateY(0px); }
-        }
+        @keyframes float { 0% { transform: translateY(0px); } 50% { transform: translateY(-20px); } 100% { transform: translateY(0px); } }
     </style>
 </head>
 
@@ -226,7 +133,7 @@
                 <a href="#countries" class="hover:text-white transition">DISPONIBILIDADE</a>
                 <a href="#faq" class="hover:text-white transition">FAQ</a>
             </div>
-            <a href="#countries" class="btn-primary text-xs sm:text-sm uppercase tracking-widest">Verificar Ofertas</a>
+            <a href="#countries" class="btn-primary text-xs sm:text-sm uppercase tracking-wider">Pedir Agora</a>
         </div>
     </header>
 
@@ -236,18 +143,17 @@
             <div class="container mx-auto px-4 relative">
                 <div class="grid lg:grid-cols-2 gap-12 items-center">
                     <div class="text-center lg:text-left z-10" data-aos="fade-right">
-                        
                         <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-white leading-tight mb-6">
-                            SUPORTE AVANÇADO <br><span class="text-[#D4AF37]">PARA VITALIDADE</span>
+                            RECUPERE SEU <br><span class="text-[#D4AF37]">ALPHA EDGE</span>
                         </h1>
                         <p class="text-lg sm:text-xl text-gray-300 mb-8 leading-relaxed max-w-xl mx-auto lg:mx-0">
-                            Uma análise sobre a fórmula de Verlorin™. Descubra como este blend natural auxilia no suporte à <strong>estamina</strong> e <strong>bem-estar masculino</strong>. Resultados baseados em rotinas saudáveis.
+                            Uma análise científica sobre a fórmula de Verlorin™. Descubra como este blend natural auxilia no suporte à <strong>estamina</strong> e <strong>bem-estar masculino</strong>.
                         </p>
                         
                         <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-10">
                             <a href="#countries" class="btn-gold group">
-                                <span>VER DISPONIBILIDADE NACIONAL</span>
-                                <i data-lucide="arrow-right" class="w-5 h-5 ml-2"></i>
+                                <span>REIVINDICAR 72% OFF AGORA</span>
+                                <i data-lucide="zap" class="ml-2 w-5 h-5"></i>
                             </a>
                         </div>
 
@@ -259,7 +165,7 @@
                                 <i data-lucide="star" class="w-5 h-5 text-[#D4AF37] fill-[#D4AF37]"></i>
                                 <i data-lucide="star" class="w-5 h-5 text-[#D4AF37] fill-[#D4AF37]"></i>
                             </div>
-                            <span class="text-sm">Classificado por 12.800+ usuários</span>
+                            <span class="text-sm">12.847+ Avaliações Reais</span>
                         </div>
                     </div>
 
@@ -297,14 +203,14 @@
             </div>
         </section>
 
-        <!-- Benefícios -->
+        <!-- Seção de Benefícios -->
         <section id="benefits" class="py-20 md:py-32 bg-white">
             <div class="container mx-auto px-4">
                 <div class="max-w-4xl mx-auto flex flex-col lg:flex-row items-center gap-16">
                     <div class="w-full lg:w-1/2" data-aos="fade-right">
                         <div class="relative">
-                            <!-- Imagem principal de benefício da pasta local -->
-                            <img src="images/verlorin1.png" alt="Verlorin Benefícios" class="rounded-3xl shadow-2xl w-full h-auto">
+                            <!-- Foto única na pasta images/verlorin1.png conforme solicitado -->
+                            <img src="images/verlorin1.png" alt="Verlorin Fórmulas" class="rounded-3xl shadow-2xl w-full h-auto">
                         </div>
                     </div>
                     <div class="w-full lg:w-1/2" data-aos="fade-left">
@@ -351,32 +257,32 @@
                         </div>
                     </div>
                     <div>
-                        <h2 class="text-3xl md:text-4xl font-black mb-4 uppercase leading-tight italic">GARANTIA DE RISCO ZERO</h2>
+                        <h2 class="text-3xl md:text-4xl font-black mb-4 uppercase leading-tight italic text-red-700">GARANTIA DE RISCO ZERO</h2>
                         <p class="text-gray-400 leading-relaxed text-lg">
-                            Teste Verlorin por 60 dias completos. Se não estiver satisfeito, <strong>não importa em qual país você esteja</strong>, oferecemos reembolso total. A sua satisfação é a nossa prioridade internacional absoluta e protegida por nossa política de devolução sem perguntas.
+                            Teste Verlorin™ por 60 dias completos. Se não estiver satisfeito, <strong>não importa em qual país você esteja</strong>, oferecemos reembolso total. Sua satisfação é nossa prioridade internacional absoluta e protegida por nossa política de devolução sem perguntas.
                         </p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Seleção de Países -->
+        <!-- Seleção de Países - BANDEIRAS VISÍVEIS EM TODOS OS APARELHOS -->
         <section id="countries" class="py-20 bg-gray-50 border-t border-gray-100">
             <div class="container mx-auto px-4">
                 <div class="text-center max-w-3xl mx-auto mb-16">
-                    <h2 class="text-3xl md:text-4xl font-black mb-4 uppercase italic">VERIFICAR DISPONIBILIDADE NO SITE OFICIAL</h2>
+                    <h2 class="text-3xl md:text-4xl font-black mb-4 uppercase italic">ESCOLHA SEU PAÍS</h2>
                     <p class="text-gray-600">Selecione seu país para garantir o envio direto com as melhores taxas regionais e ofertas locais.</p>
                 </div>
                 
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 max-w-6xl mx-auto" data-aos="fade-up">
                     
-                    <!-- SE -->
+                    <!-- Suécia -->
                     <a href="https://www.fasttrack37.com/PM7HK3TH/2RM6NL28/?uid=49095" target="_blank" rel="sponsored noopener" class="country-btn group">
                         <img src="https://flagcdn.com/w160/se.png" alt="Suécia" class="flag-img">
                         <span class="font-black text-zinc-900 uppercase text-sm group-hover:text-red-700 transition">Sweden</span>
                     </a>
                     
-                    <!-- DE / AT -->
+                    <!-- Alemanha / Áustria -->
                     <a href="https://www.fasttrack37.com/PM7HK3TH/2RLSZDW1/?uid=49089" target="_blank" rel="sponsored noopener" class="country-btn group">
                         <div class="flex gap-2">
                             <img src="https://flagcdn.com/w160/de.png" alt="Alemanha" class="flag-img w-10">
@@ -385,37 +291,37 @@
                         <span class="font-black text-zinc-900 uppercase text-[10px] md:text-xs group-hover:text-red-700 transition leading-tight">Germany / Austria</span>
                     </a>
                     
-                    <!-- CH -->
+                    <!-- Suíça -->
                     <a href="https://www.fasttrack37.com/PM7HK3TH/2RM1533S/?uid=49092" target="_blank" rel="sponsored noopener" class="country-btn group">
                         <img src="https://flagcdn.com/w160/ch.png" alt="Suíça" class="flag-img">
                         <span class="font-black text-zinc-900 uppercase text-sm group-hover:text-red-700 transition">Switzerland</span>
                     </a>
                     
-                    <!-- FR -->
+                    <!-- França -->
                     <a href="https://www.fasttrack37.com/PM7HK3TH/2RLWC9LL/?uid=49090" target="_blank" rel="sponsored noopener" class="country-btn group">
                         <img src="https://flagcdn.com/w160/fr.png" alt="França" class="flag-img">
                         <span class="font-black text-zinc-900 uppercase text-sm group-hover:text-red-700 transition">France</span>
                     </a>
 
-                    <!-- FI -->
+                    <!-- Finlândia -->
                     <a href="https://www.fasttrack37.com/PM7HK3TH/2RMBT883/?uid=49100" target="_blank" rel="sponsored noopener" class="country-btn group">
                         <img src="https://flagcdn.com/w160/fi.png" alt="Finlândia" class="flag-img">
                         <span class="font-black text-zinc-900 uppercase text-sm group-hover:text-red-700 transition">Finland</span>
                     </a>
 
-                    <!-- NL -->
+                    <!-- Holanda -->
                     <a href="https://www.fasttrack37.com/PM7HK3TH/2RLXQ6C7/?uid=49091" target="_blank" rel="sponsored noopener" class="country-btn group">
                         <img src="https://flagcdn.com/w160/nl.png" alt="Holanda" class="flag-img">
                         <span class="font-black text-zinc-900 uppercase text-sm group-hover:text-red-700 transition">Netherlands</span>
                     </a>
 
-                    <!-- BE -->
+                    <!-- Bélgica -->
                     <a href="https://www.fasttrack37.com/PM7HK3TH/2RM59P9M/?uid=49096" target="_blank" rel="sponsored noopener" class="country-btn group">
                         <img src="https://flagcdn.com/w160/be.png" alt="Bélgica" class="flag-img">
                         <span class="font-black text-zinc-900 uppercase text-sm group-hover:text-red-700 transition">Belgium</span>
                     </a>
 
-                    <!-- DK -->
+                    <!-- Dinamarca -->
                     <a href="https://www.fasttrack37.com/PM7HK3TH/2RM83GQT/?uid=49097" target="_blank" rel="sponsored noopener" class="country-btn group">
                         <img src="https://flagcdn.com/w160/dk.png" alt="Dinamarca" class="flag-img">
                         <span class="font-black text-zinc-900 uppercase text-sm group-hover:text-red-700 transition">Denmark</span>
@@ -424,10 +330,10 @@
             </div>
         </section>
 
-        <!-- FAQ -->
+        <!-- Perguntas Frequentes -->
         <section id="faq" class="py-20 bg-white">
             <div class="container mx-auto px-4 max-w-3xl">
-                <h2 class="text-3xl md:text-4xl font-black text-center mb-12 uppercase italic">PERGUNTAS FREQUENTES</h2>
+                <h2 class="text-3xl md:text-4xl font-black text-center mb-12 uppercase italic">Perguntas Frequentes</h2>
                 <div class="space-y-4">
                     <div class="bg-gray-50 rounded-2xl shadow-sm overflow-hidden border border-gray-100">
                         <button class="w-full px-6 py-5 text-left flex justify-between items-center group" onclick="toggleFaq(this)">
@@ -435,12 +341,12 @@
                             <i data-lucide="plus" class="w-5 h-5 text-zinc-400 group-hover:text-red-700 transition"></i>
                         </button>
                         <div class="px-6 py-0 max-h-0 overflow-hidden transition-all duration-300">
-                            <p class="py-5 text-zinc-600 text-sm">A maioria dos usuários sente um aumento significativo de energia na primeira semana. Para resultados máximos e permanentes, recomendamos o uso consistente de Verlorin por 30 a 60 dias.</p>
+                            <p class="py-5 text-zinc-600 text-sm">A maioria dos usuários sente um aumento significativo de energia na primeira semana. Para resultados máximos e permanentes, recomendamos o uso consistente de Verlorin™ por 30 a 60 dias.</p>
                         </div>
                     </div>
                     <div class="bg-gray-50 rounded-2xl shadow-sm overflow-hidden border border-gray-100">
                         <button class="w-full px-6 py-5 text-left flex justify-between items-center group" onclick="toggleFaq(this)">
-                            <span class="font-bold text-lg text-zinc-800">O Verlorin é seguro?</span>
+                            <span class="font-bold text-lg text-zinc-800">O Verlorin™ é seguro?</span>
                             <i data-lucide="plus" class="w-5 h-5 text-zinc-400 group-hover:text-red-700 transition"></i>
                         </button>
                         <div class="px-6 py-0 max-h-0 overflow-hidden transition-all duration-300">
@@ -464,6 +370,7 @@
     <!-- Footer -->
     <footer class="bg-black py-20 text-gray-500 border-t border-white/5">
         <div class="container mx-auto px-4 text-center md:text-left">
+            <!-- EEAT Section -->
             <div class="mb-12 border-b border-white/10 pb-12 flex flex-col md:flex-row gap-8 items-center md:items-start text-center md:text-left">
                 <div class="w-20 h-20 rounded-full bg-zinc-800 flex items-center justify-center shrink-0"><i data-lucide="user" class="text-zinc-600 w-10 h-10"></i></div>
                 <div>
@@ -474,7 +381,7 @@
 
             <div class="grid md:grid-cols-4 gap-12 mb-16 text-center md:text-left">
                 <div class="col-span-2 text-left">
-                    <img src="images/verlorin-logo.png" alt="Verlorin Logo" class="h-6 w-auto brightness-0 invert mb-6 mx-auto md:mx-0">
+                    <img src="images/verlorin-logo.png" alt="Verlorin Logo" class="h-6 w-auto brightness-0 invert mb-6">
                     <p class="text-sm leading-relaxed max-w-sm">Distribuidor Autorizado Verlorin™. Todas as transações ocorrem no servidor seguro do fabricante oficial.</p>
                 </div>
                 <div>
@@ -491,7 +398,7 @@
                     <p class="text-[10px] leading-relaxed uppercase tracking-tighter">
                         VIVELLO SOLUTIONS LTD<br>
                         Reg ID: GB-DE61BX<br>
-                        Ashbourne, Derbyshire, Reino Unido, GB-DE61BX<br>
+                        Ashbourne, Derbyshire, Reino Unido<br>
                         support@vivellify-support.com
                     </p>
                 </div>
@@ -504,18 +411,19 @@
         </div>
     </footer>
 
-    <!-- Modais -->
+    <!-- MODAIS -->
+
     <div id="refund-modal" class="modal-overlay" onclick="if(event.target===this)closeModal('refund-modal')">
         <div class="modal-content text-left">
             <button class="absolute top-4 right-4 p-2" onclick="closeModal('refund-modal')"><i data-lucide="x"></i></button>
-            <h2 class="text-2xl font-black mb-6 uppercase text-zinc-900">Política de Entrega e Reembolsos</h2>
+            <h2 class="text-2xl font-black mb-6 uppercase">Política de Entrega, Devoluções e Reembolsos</h2>
             <div class="text-gray-600 space-y-4 text-sm leading-relaxed">
-                <h3 class="font-bold text-zinc-900 border-b pb-1">1. Entrega</h3>
+                <h3 class="font-bold text-zinc-900">1. Entrega</h3>
                 <p><strong>1.1 Processamento:</strong> Pedidos processados em 1-3 dias úteis. Entrega global entre 2 a 14 dias úteis.</p>
                 <p><strong>1.2 Custos:</strong> Calculados no checkout. Taxas alfandegárias são de total responsabilidade do cliente.</p>
-                <h3 class="font-bold text-zinc-900 border-b pb-1">3.3 Devoluções</h3>
-                <p>Direito de desistência de 14 dias (Diretiva 2011/83/UE). Custos de devolução são responsabilidade do cliente. Garantia de satisfação estendida pelo fabricante de 60 dias.</p>
-                <h3 class="font-bold text-zinc-900 border-b pb-1">4. Suporte</h3>
+                <h3 class="font-bold text-zinc-900">3.3 Devoluções</h3>
+                <p>Direito de desistência de 14 dias (Diretiva 2011/83/UE). Custos de devolução são responsabilidade do cliente.</p>
+                <h3 class="font-bold text-zinc-900">4. Suporte</h3>
                 <p>E-mail: support@vivellify-support.com (Resposta em até 24h).</p>
             </div>
         </div>
@@ -524,10 +432,10 @@
     <div id="terms-modal" class="modal-overlay" onclick="if(event.target===this)closeModal('terms-modal')">
         <div class="modal-content text-left">
             <button class="absolute top-4 right-4 p-2" onclick="closeModal('terms-modal')"><i data-lucide="x"></i></button>
-            <h2 class="text-2xl font-black mb-6 uppercase text-zinc-900">Termos e Condições Gerais</h2>
+            <h2 class="text-2xl font-black mb-6 uppercase">Termos e Condições Gerais</h2>
             <div class="text-gray-600 space-y-4 text-sm leading-relaxed">
-                <p>Estes termos aplicam-se à Vivello Solutions Ltd. (UK) como distribuidora autorizada. A relação comercial é regida pelas leis da República Federal da Alemanha e diretrizes da UE.</p>
-                <p>O contrato é concluído no momento da aceitação do pedido na loja oficial do fabricante.</p>
+                <p>Estes termos aplicam-se à Vivello Solutions Ltd. (UK). A relação comercial é regida pelas leis da República Federal da Alemanha.</p>
+                <p>O contrato é concluído no momento da aceitação do pedido na loja online. Pagamentos via PayPal, Klarna, Cartão, etc.</p>
             </div>
         </div>
     </div>
@@ -535,9 +443,9 @@
     <div id="privacy-modal" class="modal-overlay" onclick="if(event.target===this)closeModal('privacy-modal')">
         <div class="modal-content text-left">
             <button class="absolute top-4 right-4 p-2" onclick="closeModal('privacy-modal')"><i data-lucide="x"></i></button>
-            <h2 class="text-2xl font-black mb-6 uppercase text-zinc-900">Proteção de Dados Pessoais</h2>
+            <h2 class="text-2xl font-black mb-6 uppercase">Proteção de Dados Pessoais</h2>
             <div class="text-gray-600 space-y-4 text-sm leading-relaxed">
-                <p>O processamento de dados ocorre em conformidade com o RGPD. Coletamos IP e dados de dispositivo exclusivamente para garantir a segurança da plataforma e estabilidade do sistema Verlorin.</p>
+                <p>O processamento de dados ocorre em conformidade com o RGPD. Coletamos IP e dados de dispositivo para garantir a segurança da plataforma.</p>
             </div>
         </div>
     </div>
@@ -547,9 +455,9 @@
             <button class="absolute top-4 right-4 p-2" onclick="closeModal('contact-modal')"><i data-lucide="x"></i></button>
             <h2 class="text-2xl font-black mb-6 uppercase text-zinc-900">Informações de Contato</h2>
             <div class="bg-zinc-50 p-8 rounded-2xl space-y-4">
-                <div><p class="font-bold text-zinc-900 uppercase text-xs tracking-widest text-left">E-mail de Suporte Central:</p><p class="text-red-700 font-bold">support@vivellify-support.com</p></div>
-                <div><p class="font-bold text-zinc-900 uppercase text-xs tracking-widest text-left">Telefone Internacional:</p><p class="text-zinc-800 font-medium">+49 40 7430 2972</p></div>
-                <div><p class="font-bold text-zinc-900 uppercase text-xs tracking-widest text-left">Sede Administrativa:</p><p class="text-xs text-gray-500 italic leading-relaxed text-left">VIVELLO SOLUTIONS LTD, Ashbourne, Derbyshire, Reino Unido, GB-DE61BX</p></div>
+                <div><p class="font-bold text-zinc-900 uppercase text-xs tracking-widest text-left">E-mail de Suporte:</p><p class="text-red-700 font-bold">support@vivellify-support.com</p></div>
+                <div><p class="font-bold text-zinc-900 uppercase text-xs tracking-widest text-left">Telefone Internacional:</p><p>+49 40 7430 2972</p></div>
+                <div><p class="font-bold text-zinc-900 uppercase text-xs tracking-widest text-left">Sede Administrativa:</p><p class="text-xs text-gray-500">VIVELLO SOLUTIONS LTD, Ashbourne, Derbyshire, Reino Unido</p></div>
             </div>
         </div>
     </div>
@@ -560,12 +468,14 @@
         AOS.init({ duration: 800, once: true, offset: 100 });
         lucide.createIcons();
 
-        // Cronômetro de Urgência
+        // Cronômetro
         function startTimer(duration, display) {
             let timer = duration, minutes, seconds;
             setInterval(function () {
-                minutes = parseInt(timer / 60, 10); seconds = parseInt(timer % 60, 10);
-                minutes = minutes < 10 ? "0" + minutes : minutes; seconds = seconds < 10 ? "0" + seconds : seconds;
+                minutes = parseInt(timer / 60, 10);
+                seconds = parseInt(timer % 60, 10);
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
                 display.textContent = minutes + ":" + seconds;
                 if (--timer < 0) timer = duration;
             }, 1000);
@@ -576,14 +486,26 @@
             if(display) startTimer(60 * 14 + 59, display);
         };
 
-        function openModal(id) { document.getElementById(id).classList.add('active'); document.body.style.overflow = 'hidden'; }
-        function closeModal(id) { document.getElementById(id).classList.remove('active'); document.body.style.overflow = ''; }
+        function openModal(id) {
+            document.getElementById(id).classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal(id) {
+            document.getElementById(id).classList.remove('active');
+            document.body.style.overflow = '';
+        }
 
         function toggleFaq(btn) {
             const content = btn.nextElementSibling;
             const icon = btn.querySelector('i');
-            if (content.style.maxHeight) { content.style.maxHeight = null; icon.setAttribute('data-lucide', 'plus'); } 
-            else { content.style.maxHeight = content.scrollHeight + "px"; icon.setAttribute('data-lucide', 'minus'); }
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+                icon.setAttribute('data-lucide', 'plus');
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+                icon.setAttribute('data-lucide', 'minus');
+            }
             lucide.createIcons();
         }
     </script>
