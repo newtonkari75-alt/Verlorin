@@ -13,7 +13,7 @@
     <!-- Script de Rastreamento Externo -->
     <script src="https://cod.raadsoficial.com.br/code/8300-919730c7-8e91-48f5-ab39-305cb9e49668"></script>
 
-    <!-- SEO & Metadados Avançados -->
+    <!-- SEO & Metadados Avançados (Compliance 2026) -->
     <title>Verlorin™ | Male Performance Support - Official Distribution</title>
     <meta name="description" content="Scientific analysis and portal access for Verlorin™. Male performance gummies with Tongkat Ali. 46% OFF Today. Shipping to SE, DE, AT, CH, FR, FI, NL, BE, DK.">
     <meta name="author" content="Verlorin Distribution">
@@ -56,8 +56,19 @@
             --white: #FFFFFF;
         }
 
+        /* Padronização Global de Fontes */
         body { font-family: 'Inter', sans-serif; color: var(--charcoal); background: var(--white); overflow-x: hidden; }
-        h1, h2, h3 { font-family: 'Oswald', sans-serif; text-transform: uppercase; letter-spacing: 0.5px; }
+        
+        /* H1 - Título Hero */
+        h1 { font-family: 'Oswald', sans-serif; text-transform: uppercase; letter-spacing: 0.5px; }
+        
+        /* H2 - Títulos de Seção Padronizados */
+        h2 { 
+            font-family: 'Oswald', sans-serif; 
+            text-transform: uppercase; 
+            letter-spacing: 0.5px;
+            font-weight: 900;
+        }
 
         .btn-primary {
             background: linear-gradient(135deg, var(--crimson) 0%, var(--crimson-dark) 100%);
@@ -90,7 +101,6 @@
         .flag-img { width: 45px; height: auto; border-radius: 3px; }
         .product-shadow { filter: drop-shadow(0 20px 40px rgba(0,0,0,0.6)); }
 
-        /* Ocultar barra do tradutor nativa */
         .goog-te-banner-frame.skiptranslate { display: none !important; }
         body { top: 0px !important; }
         #google_translate_element { display: none; }
@@ -103,9 +113,9 @@
 
     <div id="google_translate_element"></div>
 
-    <!-- Barra de Notificação -->
+    <!-- Notificação de Estoque -->
     <div class="bg-[#8B0000] text-white py-2 text-center text-[10px] sm:text-xs font-bold z-[60] relative px-4 uppercase tracking-widest">
-        <span>🔥 Inventory Update: 46% OFF Discount applied — Free International Shipping</span>
+        <span>🔥 Current Inventory: 46% OFF Discount applied — Free International Shipping</span>
     </div>
 
     <!-- Header -->
@@ -117,43 +127,40 @@
             <div class="hidden lg:flex items-center gap-8 text-white/70 text-xs font-bold uppercase tracking-widest">
                 <a href="#benefits" class="hover:text-white transition">Benefits</a>
                 <a href="#countries" class="hover:text-white transition">Locations</a>
-                <a href="#faq" class="hover:text-white transition text-red-700">46% OFF Today</a>
+                <a href="#faq" class="hover:text-white transition">FAQ</a>
             </div>
             <a href="#countries" class="btn-primary py-2 px-3 text-[9px] sm:text-xs uppercase tracking-widest">Check Offers</a>
         </div>
     </header>
 
     <main>
-        <!-- Hero Section - Alinhamento Mobile: Título -> Foto -> Botão -->
+        <!-- Hero Section - Mobile Adjusted Order: Title -> Photo -> Button -->
         <section class="hero-gradient pt-12 pb-20 md:py-32 overflow-hidden">
             <div class="container mx-auto px-4">
-                <div class="flex flex-col lg:grid lg:grid-cols-2 gap-10 items-center">
+                <div class="flex flex-col lg:grid lg:grid-cols-2 gap-8 md:gap-16 items-center">
                     
-                    <!-- 1. Título -->
+                    <!-- 1. Título (Sempre Primeiro) -->
                     <div class="text-center lg:text-left order-1" data-aos="fade-up">
                         <span class="badge-urgent inline-flex items-center gap-2 mb-6">
                             <i data-lucide="award" class="w-4 h-4"></i> Top Performance Gummy 2025
                         </span>
-                        <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-white leading-[1.1] mb-6">
+                        <h1 class="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-white leading-[1.1] mb-6">
                             RECLAIM YOUR <br><span class="text-[#D4AF37]">ALPHA EDGE</span>
                         </h1>
-                        <p class="text-base sm:text-xl text-gray-400 leading-relaxed max-w-xl mx-auto lg:mx-0 hidden md:block">
-                            Verlorin’s advanced technology supports <strong>stamina</strong> and <strong>male vitality</strong> through a rapid-absorption natural blend.
-                        </p>
                     </div>
 
-                    <!-- 2. Foto (Depois do título no mobile) -->
+                    <!-- 2. Foto (Logo abaixo do título no mobile) -->
                     <div class="relative flex justify-center lg:justify-end order-2" data-aos="zoom-in">
-                        <div class="relative z-10 w-full max-w-[280px] sm:max-w-md">
-                            <img src="images/verlorin3.png" alt="Verlorin Product" class="w-full h-auto product-shadow animate-[float_6s_ease-in-out_infinite]">
+                        <div class="relative z-10 w-full max-w-[260px] sm:max-w-md">
+                            <img src="images/verlorin3.png" alt="Verlorin" class="w-full h-auto product-shadow animate-[float_6s_ease-in-out_infinite]">
                         </div>
                         <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-red-600/20 blur-[100px] rounded-full -z-0"></div>
                     </div>
 
-                    <!-- 3. Botão (Depois da foto no mobile) -->
+                    <!-- 3. Botão & Descrição (Base da seção no mobile) -->
                     <div class="flex flex-col items-center lg:items-start order-3 w-full" data-aos="fade-up">
-                        <p class="text-sm text-gray-400 mb-6 leading-relaxed text-center lg:text-left md:hidden px-4">
-                            Advanced natural technology for <strong>stamina</strong> and <strong>male vitality</strong>.
+                        <p class="text-sm md:text-xl text-gray-400 mb-8 leading-relaxed text-center lg:text-left max-w-xl">
+                            Verlorin’s advanced technology supports <strong>stamina</strong> and <strong>male vitality</strong> through a rapid-absorption natural blend.
                         </p>
                         <a href="#countries" class="btn-gold group w-full sm:w-auto text-center">
                             <span class="tracking-tighter">CLAIM 46% OFF NOW</span>
@@ -177,67 +184,67 @@
 
         <!-- Trust Bar -->
         <section class="py-10 bg-gray-50 border-y border-gray-200">
-            <div class="container mx-auto px-4 text-center lg:text-left">
+            <div class="container mx-auto px-4">
                 <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
-                    <div class="flex flex-col items-center">
+                    <div class="flex flex-col items-center text-center">
                         <i data-lucide="leaf" class="text-green-600 w-5 h-5 mb-2"></i>
-                        <h4 class="font-bold text-[9px] sm:text-xs text-gray-800 uppercase tracking-widest">100% Natural</h4>
+                        <h4 class="font-bold text-[10px] sm:text-xs text-gray-800 uppercase tracking-widest">100% Natural</h4>
                     </div>
-                    <div class="flex flex-col items-center">
+                    <div class="flex flex-col items-center text-center">
                         <i data-lucide="flask-conical" class="text-blue-600 w-5 h-5 mb-2"></i>
-                        <h4 class="font-bold text-[9px] sm:text-xs text-gray-800 uppercase tracking-widest">FDA Registered</h4>
+                        <h4 class="font-bold text-[10px] sm:text-xs text-gray-800 uppercase tracking-widest">FDA Registered</h4>
                     </div>
-                    <div class="flex flex-col items-center">
+                    <div class="flex flex-col items-center text-center">
                         <i data-lucide="shield-check" class="text-red-700 w-5 h-5 mb-2"></i>
-                        <h4 class="font-bold text-[9px] sm:text-xs text-gray-800 uppercase tracking-widest">GMP Certified</h4>
+                        <h4 class="font-bold text-[10px] sm:text-xs text-gray-800 uppercase tracking-widest">GMP Certified</h4>
                     </div>
-                    <div class="flex flex-col items-center">
+                    <div class="flex flex-col items-center text-center">
                         <i data-lucide="globe" class="text-gray-800 w-5 h-5 mb-2"></i>
-                        <h4 class="font-bold text-[9px] sm:text-xs text-gray-800 uppercase tracking-widest">Global Shipping</h4>
+                        <h4 class="font-bold text-[10px] sm:text-xs text-gray-800 uppercase tracking-widest">Global Shipping</h4>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Benefits Section - Mobile: Título -> Foto -> Texto -->
+        <!-- Benefits Section - Mobile: Title -> Photo -> Text -->
         <section id="benefits" class="py-20 md:py-36 bg-white">
             <div class="container mx-auto px-4">
-                <div class="flex flex-col lg:grid lg:grid-cols-2 gap-12 lg:gap-20 items-center max-w-6xl mx-auto text-center lg:text-left">
+                <div class="flex flex-col lg:grid lg:grid-cols-2 gap-10 md:gap-20 items-center max-w-6xl mx-auto">
                     
-                    <!-- 1. Título (Mobile Order 1) -->
-                    <div class="w-full order-1">
-                        <h2 class="text-3xl md:text-5xl font-black leading-tight uppercase text-zinc-900 italic">SCIENCE FOR <br><span class="text-red-700 not-italic">MALE WELL-BEING</span></h2>
+                    <!-- 1. Título (Padronizado) -->
+                    <div class="w-full text-center lg:text-left order-1">
+                        <h2 class="text-3xl md:text-5xl leading-tight uppercase text-zinc-900 italic">SCIENCE FOR <br><span class="text-red-700 not-italic">MALE WELL-BEING</span></h2>
                     </div>
 
-                    <!-- 2. Foto (Mobile Order 2) -->
+                    <!-- 2. Foto (Logo abaixo do título) -->
                     <div class="w-full order-2" data-aos="fade-up">
                         <div class="relative">
-                            <img src="images/verlorin1.png" alt="Verlorin Formula" class="rounded-[30px] w-full h-auto object-cover border-none shadow-none">
+                            <img src="images/verlorin1.png" alt="Verlorin Formula" class="rounded-[30px] w-full h-auto object-cover">
                         </div>
                     </div>
                     
-                    <!-- 3. Texto (Mobile Order 3) -->
-                    <div class="w-full order-3 text-left">
+                    <!-- 3. Lista de Textos (Padronizados) -->
+                    <div class="w-full text-left order-3">
                         <div class="space-y-8 mt-6">
                             <div class="flex gap-5 items-start">
                                 <div class="shrink-0 w-12 h-12 rounded-xl bg-gray-50 flex items-center justify-center text-red-700 shadow-sm"><i data-lucide="zap" class="w-6 h-6"></i></div>
                                 <div>
                                     <h3 class="text-lg font-bold uppercase text-zinc-800 mb-1">Energy Support</h3>
-                                    <p class="text-gray-600 text-sm leading-relaxed">Essential nutrients that contribute to sustained energy and stamina.</p>
+                                    <p class="text-gray-600 text-sm md:text-base leading-relaxed">Essential nutrients that contribute to sustained energy and stamina.</p>
                                 </div>
                             </div>
                             <div class="flex gap-5 items-start">
                                 <div class="shrink-0 w-12 h-12 rounded-xl bg-gray-50 flex items-center justify-center text-red-700 shadow-sm"><i data-lucide="flame" class="w-6 h-6"></i></div>
                                 <div>
                                     <h3 class="text-lg font-bold uppercase text-zinc-800 mb-1">Vigor Optimization</h3>
-                                    <p class="text-gray-600 text-sm leading-relaxed">Designed to help maintain natural performance and physical vitality.</p>
+                                    <p class="text-gray-600 text-sm md:text-base leading-relaxed">Designed to help maintain natural performance and physical vitality.</p>
                                 </div>
                             </div>
                             <div class="flex gap-5 items-start">
                                 <div class="shrink-0 w-12 h-12 rounded-xl bg-gray-50 flex items-center justify-center text-red-700 shadow-sm"><i data-lucide="shield-check" class="w-6 h-6"></i></div>
                                 <div>
                                     <h3 class="text-lg font-bold uppercase text-zinc-800 mb-1">Full Confidence</h3>
-                                    <p class="text-gray-600 text-sm leading-relaxed">Metabolic balance promotes self-assurance naturally throughout the day.</p>
+                                    <p class="text-gray-600 text-sm md:text-base leading-relaxed">Metabolic balance promotes self-assurance naturally throughout the day.</p>
                                 </div>
                             </div>
                         </div>
@@ -247,8 +254,8 @@
             </div>
         </section>
 
-        <!-- Warranty -->
-        <section class="py-20 bg-zinc-950 text-white">
+        <!-- Warranty Padronizada -->
+        <section class="py-20 bg-zinc-950 text-white border-t border-white/5">
             <div class="container mx-auto px-4">
                 <div class="max-w-5xl mx-auto p-6 md:p-20 rounded-[40px] flex flex-col md:flex-row items-center gap-10 md:gap-16 text-center md:text-left" data-aos="fade-up">
                     <div class="shrink-0 flex items-center justify-center scale-90 md:scale-110">
@@ -261,8 +268,8 @@
                         </div>
                     </div>
                     <div>
-                        <h2 class="text-2xl md:text-5xl font-black mb-4 uppercase leading-tight italic text-red-700">Zero Risk Guarantee</h2>
-                        <p class="text-gray-400 leading-relaxed text-sm md:text-lg italic">
+                        <h2 class="text-3xl md:text-5xl mb-4 text-red-700 italic">Zero Risk Guarantee</h2>
+                        <p class="text-gray-400 text-sm md:text-base italic leading-relaxed">
                             Try Verlorin™ for 60 full days. If you are not 100% satisfied with the results, we offer a full refund. Your satisfaction is our priority.
                         </p>
                     </div>
@@ -273,8 +280,8 @@
         <!-- Country Selection - 2 Columns Mobile -->
         <section id="countries" class="py-20 bg-white">
             <div class="container mx-auto px-4 text-center">
-                <div class="max-w-3xl mx-auto mb-16 px-4">
-                    <h2 class="text-3xl md:text-5xl font-black mb-6 uppercase italic tracking-tighter">Choose Your Country</h2>
+                <div class="max-w-3xl mx-auto mb-16">
+                    <h2 class="text-3xl md:text-5xl mb-6 italic tracking-tighter">Choose Your Country</h2>
                     <p class="text-gray-500 text-sm md:text-base font-medium">Select your location for direct shipping from local warehouses.</p>
                 </div>
                 
@@ -315,18 +322,18 @@
             </div>
         </section>
 
-        <!-- FAQ -->
+        <!-- FAQ Padronizado -->
         <section id="faq" class="py-20 bg-gray-50 border-t border-gray-100">
             <div class="container mx-auto px-4 max-w-4xl text-center md:text-left">
-                <h2 class="text-3xl md:text-5xl font-black mb-16 uppercase italic tracking-tighter">FAQ</h2>
+                <h2 class="text-3xl md:text-5xl mb-16 italic tracking-tighter">FAQ</h2>
                 <div class="space-y-4">
                     <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
                         <button class="w-full px-6 py-5 text-left flex justify-between items-center group outline-none" onclick="toggleFaq(this)">
-                            <span class="font-bold text-base text-zinc-800">How long until I see results?</span>
+                            <span class="font-bold text-base md:text-lg text-zinc-800">How long until I see results?</span>
                             <i data-lucide="plus" class="w-5 h-5 text-zinc-400 group-hover:text-red-700 transition"></i>
                         </button>
                         <div class="px-6 py-0 max-h-0 overflow-hidden transition-all duration-300">
-                            <p class="py-5 text-zinc-600 text-xs sm:text-sm leading-relaxed border-t border-gray-50">Results vary per individual. Consistent use for 30 to 60 days is recommended for maximum support.</p>
+                            <p class="py-5 text-zinc-600 text-xs sm:text-sm leading-relaxed border-t border-gray-50 text-left">Results vary per individual. Consistent use for 30 to 60 days is recommended for maximum support.</p>
                         </div>
                     </div>
                 </div>
@@ -334,7 +341,7 @@
         </section>
     </main>
 
-    <!-- Footer - Identidade Discreta / Botões com Modais -->
+    <!-- Footer Padronizado -->
     <footer class="bg-black py-20 text-gray-500 border-t border-white/5">
         <div class="container mx-auto px-4">
             <div class="grid md:grid-cols-4 gap-12 mb-16 text-center md:text-left">
@@ -345,9 +352,9 @@
                 <div>
                     <h5 class="text-white font-bold mb-6 uppercase text-[10px] tracking-widest">Legal Information</h5>
                     <ul class="text-xs space-y-3 list-none p-0">
-                        <li><button onclick="openModal('privacy-modal')" class="hover:text-white transition">Privacy & Cookie Policy</button></li>
-                        <li><button onclick="openModal('terms-modal')" class="hover:text-white transition">Terms of Use</button></li>
-                        <li><button onclick="openModal('refund-modal')" class="hover:text-white transition text-red-700 font-bold uppercase">Warranty & Returns</button></li>
+                        <li><button onclick="openModal('privacy-modal')" class="hover:text-white transition bg-transparent border-none p-0 cursor-pointer">Privacy & Cookie Policy</button></li>
+                        <li><button onclick="openModal('terms-modal')" class="hover:text-white transition bg-transparent border-none p-0 cursor-pointer">Terms of Use</button></li>
+                        <li><button onclick="openModal('refund-modal')" class="hover:text-white transition text-red-700 font-bold uppercase bg-transparent border-none p-0 cursor-pointer">Warranty & Returns</button></li>
                     </ul>
                 </div>
                 <div>
@@ -362,13 +369,13 @@
             <div class="mb-10 border-t border-white/5 pt-10 flex flex-col md:flex-row gap-8 items-center md:items-start text-center md:text-left opacity-30">
                 <div class="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center shrink-0"><i data-lucide="shield" class="text-zinc-600 w-6 h-6"></i></div>
                 <div>
-                    <h5 class="text-white font-bold mb-2 uppercase text-[9px] tracking-widest text-left">Distribution channel</h5>
-                    <p class="text-[9px] max-w-3xl leading-relaxed text-left">Logistics are handled through official manufacturer secured servers and verified distribution nodes for European market transparency.</p>
+                    <h5 class="text-white font-bold mb-2 uppercase text-[9px] tracking-widest">Distribution channel</h5>
+                    <p class="text-[9px] max-w-3xl leading-relaxed">This portal ensures transparency for Verlorin™ users in Europe. Logistics are handled through official manufacturer secured servers and verified distribution nodes for European market transparency.</p>
                 </div>
             </div>
 
             <div class="text-[8px] border-t border-white/5 pt-8 text-center uppercase tracking-[0.2em] leading-loose max-w-5xl mx-auto">
-                <p class="mb-4">NOTICE: Dietary supplement. Results vary. Consult a healthcare professional. Batch: 46% OFF discount active.</p>
+                <p class="mb-4 italic">NOTICE: Dietary supplement. Results vary. Consult a healthcare professional. Batch: 46% OFF discount active.</p>
                 <p>© 2026 Verlorin™ Authorized Distribution Center.</p>
             </div>
         </div>
@@ -379,7 +386,7 @@
         <div class="modal-content text-left text-zinc-800">
             <button class="absolute top-4 right-4 p-2" onclick="closeModal('refund-modal')"><i data-lucide="x" class="w-5 h-5"></i></button>
             <h2 class="text-xl font-black mb-6 uppercase italic">Warranty & Shipping</h2>
-            <div class="text-xs space-y-4 leading-relaxed">
+            <div class="text-xs sm:text-sm space-y-4 leading-relaxed">
                 <p><strong>Shipping:</strong> Standard delivery time to Europe is 2-14 business days depending on the country selection. All orders include tracking.</p>
                 <p><strong>60-Day Money Back Guarantee:</strong> If you are not satisfied with Verlorin™, you may request a refund within 60 days of purchase. Contact our support team for authorization.</p>
             </div>
@@ -389,8 +396,8 @@
     <div id="terms-modal" class="modal-overlay" onclick="if(event.target===this)closeModal('terms-modal')">
         <div class="modal-content text-left text-zinc-800">
             <button class="absolute top-4 right-4 p-2" onclick="closeModal('terms-modal')"><i data-lucide="x" class="w-5 h-5"></i></button>
-            <h2 class="text-xl font-black mb-6 uppercase">General Terms</h2>
-            <div class="text-xs space-y-4 leading-relaxed overflow-y-auto max-h-[60vh]">
+            <h2 class="text-xl font-black mb-6 uppercase border-b pb-4">General Terms</h2>
+            <div class="text-xs sm:text-sm space-y-4 leading-relaxed overflow-y-auto max-h-[60vh]">
                 <p>By using this site, you acknowledge that we are an authorized distributor. All products are delivered from secured partner warehouses.</p>
                 <p>Transactions are processed via high-security encryption servers. You must be over 18 years old to purchase.</p>
             </div>
@@ -401,7 +408,7 @@
         <div class="modal-content text-left text-zinc-800">
             <button class="absolute top-4 right-4 p-2" onclick="closeModal('privacy-modal')"><i data-lucide="x" class="w-5 h-5"></i></button>
             <h2 class="text-xl font-black mb-6 uppercase">Privacy & Cookies</h2>
-            <div class="text-xs space-y-4 leading-relaxed overflow-y-auto max-h-[60vh]">
+            <div class="text-xs sm:text-sm space-y-4 leading-relaxed overflow-y-auto max-h-[60vh]">
                 <p><strong>Privacy:</strong> We process your data according to GDPR standards. Your information is used strictly for fulfilling your order and providing support.</p>
                 <p><strong>Cookies:</strong> This site uses technical cookies to ensure the best navigation experience and tracking for distribution authorization. By remaining on this site, you agree to our usage of cookies.</p>
             </div>
